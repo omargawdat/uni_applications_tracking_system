@@ -10,7 +10,7 @@ from .models import UniversityProgram
 class ApplicationTrackingInline(StackedInline):
     model = ApplicationTracking
     extra = 0
-    fields = ('status', 'priority', 'application_submission_date', 'start_date', 'end_date', 'notes')
+    fields = ('status', 'field', 'priority', 'application_submission_date', 'start_date', 'end_date', 'notes')
     classes = ['collapse']
 
 
@@ -22,12 +22,12 @@ class UniversityProgramAdmin(ModelAdmin):
 
     # Display the most important fields in the list view of the admin panel
     list_display = (
-        'name', 'university', 'field', 'degree', 'teaching_language', 'application_deadline',
+        'name', 'university', 'degree', 'teaching_language', 'application_deadline',
         'status'
     )
 
     # Filters for the list view
-    list_filter = ('field', 'degree', 'teaching_language', 'status')
+    list_filter = ('degree', 'status')
 
     # Searchable fields
     search_fields = ('name', 'university', 'description', 'personal_note')
@@ -38,7 +38,7 @@ class UniversityProgramAdmin(ModelAdmin):
     # Fieldsets to group fields in the form view
     fieldsets = (
         ('Overview', {
-            'fields': ('link', 'name', 'university', 'field', 'degree', 'teaching_language', 'languages',
+            'fields': ('link', 'name', 'university', 'degree', 'teaching_language', 'languages',
                        'program_duration', 'beginning', 'combined_phd', 'joint_degree', 'description'),
             'classes': ['tab']
         }),
@@ -77,8 +77,7 @@ class ApplicationTrackingAdmin(ModelAdmin):
 
     # Display more relevant fields in the list view
     list_display = (
-        'university_program', 'status', 'priority', 'application_submission_date', 'start_date', 'end_date',
-        'get_needed_docs'
+        'university_program', 'status', 'field', 'get_needed_docs'
     )
 
     # Filter options to easily narrow down by status and priority
@@ -90,7 +89,7 @@ class ApplicationTrackingAdmin(ModelAdmin):
     # Group related fields in the form using fieldsets
     fieldsets = (
         ('Program Information', {
-            'fields': ('university_program',)
+            'fields': ('university_program', 'field',)
         }),
         ('Application Tracking', {
             'fields': ('status', 'priority', 'application_submission_date', 'start_date', 'end_date',)

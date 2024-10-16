@@ -73,18 +73,7 @@ class UniversityProgram(models.Model):
         blank=True,
         help_text="Required GPA score (0-4 scale)"
     )
-    field = models.CharField(
-        max_length=3,
-        choices=[
-            ('AI', 'Artificial Intelligence'),
-            ('CS', 'Computer Science'),
-            ('CYB', 'Cyber Security'),
-            ('DS', 'Data Science')
-        ],
-        null=True,
-        blank=True,
-        help_text="Main field of study"
-    )
+
 
     def __str__(self):
         return f"{self.name} at {self.university}"
@@ -119,7 +108,18 @@ class ApplicationTracking(models.Model):
         choices=ApplicationStatus.choices,
         default=ApplicationStatus.NOT_STARTED,
     )
-
+    field = models.CharField(
+        max_length=3,
+        choices=[
+            ('AI', 'Artificial Intelligence'),
+            ('CS', 'Computer Science'),
+            ('CYB', 'Cyber Security'),
+            ('DS', 'Data Science')
+        ],
+        null=True,
+        blank=True,
+        help_text="Main field of study"
+    )
     application_submission_date = models.DateField(null=True, blank=True)
     priority = models.IntegerField(default=0, choices=[(i, i) for i in range(1, 6)])
     required_docs = models.ManyToManyField(Document, related_name='required_in_applications', blank=True)
