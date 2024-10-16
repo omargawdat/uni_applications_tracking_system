@@ -1,3 +1,5 @@
+import time
+
 import requests
 from bs4 import BeautifulSoup
 
@@ -25,73 +27,74 @@ class ProgramScraper:
 
     def get_university_info(self):
         university_tab = self.soup.find('div', {'id': 'university', 'role': 'tabpanel'})
-        if university_tab:
-            # Get the main content
-            content = university_tab.find('div', class_='c-profile__content')
-            main_info = ' '.join(p.text.strip() for p in content.find_all('p')) if content else ''
+        if not university_tab:
+            return None
 
-            # Get the location information
-            location_header = university_tab.find('h3',
-                                                  string=lambda text: 'University location' in text if text else False)
-            location_content = location_header.find_next('div',
-                                                         class_='c-profile__content') if location_header else None
-            location_info = ' '.join(p.text.strip() for p in location_content.find_all('p')) if location_content else ''
+        content = university_tab.find('div', class_='c-profile__content')
+        main_info = ' '.join(p.text.strip() for p in content.find_all('p')) if content else ''
 
-            # Combine main info and location info
-            return f"{main_info}\n\nUniversity location:\n{location_info}"
-        return None
+        location_header = university_tab.find('h3',
+                                              string=lambda text: 'University location' in text if text else False)
+        location_content = location_header.find_next('div', class_='c-profile__content') if location_header else None
+        location_info = ' '.join(p.text.strip() for p in location_content.find_all('p')) if location_content else ''
+
+        return f"{main_info}\n\nUniversity location:\n{location_info}"
 
     def scrape_program_info(self):
         self.fetch_page()
+        info_fields = [
+            'Degree', 'Teaching language', 'Languages', 'Full-time / part-time', 'Programme duration',
+            'Beginning', 'Application deadline', 'Tuition fees per semester in EUR',
+            "Combined Master's degree / PhD programme", 'Joint degree / double degree programme',
+            'Description/content', 'Course organisation', 'A Diploma supplement will be issued',
+            'International elements', 'Course-specific, integrated German language courses',
+            'Course-specific, integrated English language courses', 'Semester contribution',
+            'Costs of living', 'Funding opportunities within the university', 'Academic admission requirements',
+            'Language requirements', 'Submit application to', 'Possibility of finding part-time employment',
+            'Accommodation', 'Career advisory service', 'Support for international students',
+            'Supervisor-student ratio'
+        ]
 
-        return {
+        program_info = {field.lower().replace(' ', '_').replace('/', '_'): self.get_info(field) for field in
+                        info_fields}
+        program_info.update({
             'name': self.soup.find('h2', class_='c-detail-header__title').text.strip(),
             'university': self.soup.find('h3', class_='c-detail-header__subtitle').text.strip(),
-            'degree': self.get_info('Degree'),
-            'teaching_language': self.get_info('Teaching language'),
-            'languages': self.get_info('Languages'),
-            'full_time_part_time': self.get_info('Full-time / part-time'),
-            'program_duration': self.get_info('Programme duration'),
-            'beginning': self.get_info('Beginning'),
-            'application_deadline': self.get_info('Application deadline'),
-            'tuition_fees': self.get_info('Tuition fees per semester in EUR'),
-            'combined_phd': self.get_info("Combined Master's degree / PhD programme"),
-            'joint_degree': self.get_info('Joint degree / double degree programme'),
-            'description': self.get_info('Description/content'),
-            'course_organisation': self.get_info('Course organisation'),
-            'diploma_supplement': self.get_info('A Diploma supplement will be issued'),
-            'international_elements': self.get_info('International elements'),
-            'german_language_courses': self.get_info('Course-specific, integrated German language courses'),
-            'english_language_courses': self.get_info('Course-specific, integrated English language courses'),
-            'semester_contribution': self.get_info('Semester contribution'),
-            'costs_of_living': self.get_info('Costs of living'),
-            'funding_opportunities': self.get_info('Funding opportunities within the university'),
-            'academic_requirements': self.get_info('Academic admission requirements'),
-            'language_requirements': self.get_info('Language requirements'),
-            'submit_application_to': self.get_info('Submit application to'),
-            'part_time_employment': self.get_info('Possibility of finding part-time employment'),
-            'accommodation': self.get_info('Accommodation'),
-            'career_advisory_service': self.get_info('Career advisory service'),
-            'support_for_international_students': self.get_info('Support for international students'),
-            'supervisor_student_ratio': self.get_info('Supervisor-student ratio'),
             'about_university': self.get_university_info()
-        }
+        })
+        return program_info
+
+
+def get_program_links(api_url):
+    response = requests.get(api_url)
+    data = response.json()
+    base_url = "https://www2.daad.de"
+    return [f"{base_url}{course.get('link', '')}" for course in data.get('courses', [])]
+
+
+def scrape_all_programs(api_url):
+    program_links = get_program_links(api_url)
+    all_program_info = []
+
+    for i, link in enumerate(program_links, 1):
+        print(f"Scraping program {i}/{len(program_links)}: {link}")
+        scraper = ProgramScraper(link)
+        try:
+            program_info = scraper.scrape_program_info()
+            all_program_info.append(program_info)
+        except Exception as e:
+            print(f"Failed to scrape program information: {str(e)}")
+        time.sleep(1)  # Be polite to the server
+
+    return all_program_info
 
 
 def main():
-    url = "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4238/"
-    scraper = ProgramScraper(url)
-
-    try:
-        program_info = scraper.scrape_program_info()
-        print("Program Information:")
-        for key, value in program_info.items():
-            print(f"{key}:")
-            print(value)
-            print("-" * 50)
-    except Exception as e:
-        print(f"Failed to scrape program information: {str(e)}")
+    api_url = "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?cert=&admReq=&langExamPC=&scholarshipLC=&langExamLC=&scholarshipSC=&langExamSC=&degree%5B%5D=2&fos=6&langDeAvailable=&langEnAvailable=&fee=3&bgn%5B%5D=2&sort=4&dur=&subjects%5B%5D=49&q=&limit=3&offset=&display=grid&isElearning=&isSep="
+    return {"universities": scrape_all_programs(api_url)}
 
 
 if __name__ == "__main__":
-    main()
+    result = main()
+    print(f"Total programs scraped: {len(result['universities'])}")
+    print(result['universities'])
