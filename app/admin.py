@@ -10,7 +10,7 @@ from .models import UniversityProgram
 class ApplicationTrackingInline(StackedInline):
     model = ApplicationTracking
     extra = 0
-    fields = ('status', 'field', 'priority', 'application_submission_date', 'start_date', 'end_date', 'notes')
+    fields = ('status', 'field', 'start_date', 'end_date', 'priority', 'application_submission_date',  'notes')
     classes = ['collapse']
 
 
@@ -38,18 +38,17 @@ class UniversityProgramAdmin(ModelAdmin):
     # Fieldsets to group fields in the form view
     fieldsets = (
         ('Overview', {
-            'fields': ('link', 'name', 'university', 'degree', 'teaching_language', 'languages',
-                       'program_duration', 'beginning', 'combined_phd', 'joint_degree', 'description'),
-            'classes': ['tab']
-        }),
-        ('Details', {
-            'fields': ('course_organisation', 'diploma_supplement', 'international_elements',
-                       'german_language_courses', 'english_language_courses', 'about_university',
-                       'full_time_part_time', 'supervisor_student_ratio'),
+            'fields': ('status', 'link', 'name', 'degree', 'languages', 'description',),
             'classes': ['tab']
         }),
         ('Costs and Funding', {
             'fields': ('tuition_fees', 'costs_of_living', 'semester_contribution', 'funding_opportunities'),
+            'classes': ['tab']
+        }),
+        ('Details', {
+            'fields': ('course_organisation',
+                       'about_university',
+                       'full_time_part_time', 'supervisor_student_ratio'),
             'classes': ['tab']
         }),
         ('Requirements', {
@@ -62,8 +61,9 @@ class UniversityProgramAdmin(ModelAdmin):
                        'support_for_international_students'),
             'classes': ['tab']
         }),
-        ('Tracking', {
-            'fields': ('status', 'personal_note'),
+        ('Other', {
+            'fields': (
+                "personal_note", 'combined_phd', 'joint_degree', 'diploma_supplement', 'international_elements', "program_duration"),
             'classes': ['tab']
         }),
     )
