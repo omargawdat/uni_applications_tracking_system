@@ -2,42 +2,41 @@ from django.db import models
 
 
 class UniversityProgram(models.Model):
-    name = models.CharField(max_length=200)
-    university = models.CharField(max_length=200)
-    degree = models.CharField(max_length=100)
-    teaching_language = models.CharField(max_length=100)
-    languages = models.TextField(blank=True)
-    full_time_part_time = models.CharField(max_length=100)
-    program_duration = models.CharField(max_length=100)
-    beginning = models.CharField(max_length=100)
-    application_deadline = models.TextField()
-    tuition_fees = models.CharField(max_length=100)
-    combined_phd = models.CharField(max_length=100)
-    joint_degree = models.CharField(max_length=100)
-    description = models.TextField()
-    course_organisation = models.TextField(blank=True)
-    diploma_supplement = models.CharField(max_length=100, blank=True)
-    international_elements = models.TextField(blank=True)
-    german_language_courses = models.CharField(max_length=100, blank=True)
-    english_language_courses = models.CharField(max_length=100, blank=True)
-    semester_contribution = models.TextField(blank=True)
-    costs_of_living = models.TextField(blank=True)
-    funding_opportunities = models.TextField(blank=True)
-    academic_requirements = models.TextField()
-    language_requirements = models.TextField()
-    submit_application_to = models.TextField()
-    part_time_employment = models.TextField(blank=True)
-    accommodation = models.TextField(blank=True)
-    career_advisory_service = models.TextField(blank=True)
-    support_for_international_students = models.TextField(blank=True)
-    supervisor_student_ratio = models.CharField(max_length=100, blank=True)
-    about_university = models.TextField()
-    link = models.URLField(max_length=500, blank=True, help_text="URL of the program")  # New link field
-
+    name = models.CharField(max_length=200, null=True, blank=True)
+    university = models.CharField(max_length=200, null=True, blank=True)
+    degree = models.CharField(max_length=100, null=True, blank=True)
+    teaching_language = models.CharField(max_length=100, null=True, blank=True)
+    languages = models.TextField(null=True, blank=True)
+    full_time_part_time = models.CharField(max_length=100, null=True, blank=True)
+    program_duration = models.CharField(max_length=100, null=True, blank=True)
+    beginning = models.CharField(max_length=100, null=True, blank=True)
+    application_deadline = models.TextField(null=True, blank=True)
+    tuition_fees = models.CharField(max_length=100, null=True, blank=True)
+    combined_phd = models.CharField(max_length=100, null=True, blank=True)
+    joint_degree = models.CharField(max_length=100, null=True, blank=True)
+    description = models.TextField(null=True, blank=True)
+    course_organisation = models.TextField(null=True, blank=True)
+    diploma_supplement = models.CharField(max_length=100, null=True, blank=True)
+    international_elements = models.TextField(null=True, blank=True)
+    german_language_courses = models.CharField(max_length=100, null=True, blank=True)
+    english_language_courses = models.CharField(max_length=100, null=True, blank=True)
+    semester_contribution = models.TextField(null=True, blank=True)
+    costs_of_living = models.TextField(null=True, blank=True)
+    funding_opportunities = models.TextField(null=True, blank=True)
+    academic_requirements = models.TextField(null=True, blank=True)
+    language_requirements = models.TextField(null=True, blank=True)
+    submit_application_to = models.TextField(null=True, blank=True)
+    part_time_employment = models.TextField(null=True, blank=True)
+    accommodation = models.TextField(null=True, blank=True)
+    career_advisory_service = models.TextField(null=True, blank=True)
+    support_for_international_students = models.TextField(null=True, blank=True)
+    supervisor_student_ratio = models.CharField(max_length=100, null=True, blank=True)
+    about_university = models.TextField(null=True, blank=True)
+    link = models.URLField(max_length=500, null=True, blank=True, help_text="URL of the program")
 
     is_checked = models.BooleanField(default=False, help_text="Have you reviewed this program?")
     is_sufficient = models.BooleanField(default=True, help_text="Does this program meet your requirements?")
-    personal_note = models.TextField(blank=True, help_text="Your personal notes about this program")
+    personal_note = models.TextField(null=True, blank=True, help_text="Your personal notes about this program")
     application_start_date = models.DateField(
         null=True,
         blank=True,
@@ -77,11 +76,10 @@ class UniversityProgram(models.Model):
     field = models.CharField(
         max_length=3,
         choices=FIELD_CHOICES,
-        help_text="Main field of study",
         null=True,
-        blank=True
+        blank=True,
+        help_text="Main field of study"
     )
-
     def __str__(self):
         return f"{self.name} at {self.university}"
 
