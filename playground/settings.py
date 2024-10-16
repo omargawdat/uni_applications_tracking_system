@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 
+from django.urls import reverse_lazy
+from django.utils.translation import gettext_lazy as _
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -118,3 +121,46 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+UNFOLD = {
+    "SIDEBAR": {
+        "navigation": [
+            {
+                # "title": _("University Programs"),
+                "separator": True,
+                "items": [
+                    {
+                        "title": _("University Programs"),
+                        "icon": "school",
+                        "link": reverse_lazy("admin:app_universityprogram_changelist"),
+                        "permission": lambda request: request.user.has_perm("app.view_universityprogram"),
+                    },
+                ],
+            },
+            {
+                # "title": _("Application Tracking"),
+                "separator": True,
+                "items": [
+                    {
+                        "title": _("Track Applications"),
+                        "icon": "assignment",
+                        "link": reverse_lazy("admin:app_applicationtracking_changelist"),
+                        "permission": lambda request: request.user.has_perm("app.view_applicationtracking"),
+                    }
+
+                ],
+            },
+            {
+                # "title": _("Documents"),
+                "separator": True,
+                "items": [
+                    {
+                        "title": _("All Documents"),
+                        "icon": "folder",
+                        "link": reverse_lazy("admin:app_document_changelist"),
+                        "permission": lambda request: request.user.has_perm("app.view_document"),
+                    }
+                ],
+            },
+        ],
+    },
+}

@@ -1,0 +1,130 @@
+[
+  {
+    "model": "app.document",
+    "pk": 1,
+    "fields": {
+      "name": "Bachelor’s Degree Certificate",
+      "is_available": false
+    }
+  },
+  {
+    "model": "app.document",
+    "pk": 2,
+    "fields": {
+      "name": "Transcript of Records",
+      "is_available": false
+    }
+  },
+  {
+    "model": "app.document",
+    "pk": 3,
+    "fields": {
+      "name": "Proof of English Proficiency (TOEFL/IELTS/Cambridge Certificate)",
+      "is_available": false
+    }
+  },
+  {
+    "model": "app.document",
+    "pk": 4,
+    "fields": {
+      "name": "Proof of German Proficiency (TestDaF/DSH)",
+      "is_available": false
+    }
+  },
+  {
+    "model": "app.document",
+    "pk": 5,
+    "fields": {
+      "name": "Curriculum Vitae (CV)",
+      "is_available": false
+    }
+  },
+  {
+    "model": "app.document",
+    "pk": 6,
+    "fields": {
+      "name": "Motivation Letter",
+      "is_available": false
+    }
+  },
+  {
+    "model": "app.document",
+    "pk": 7,
+    "fields": {
+      "name": "Letters of Recommendation",
+      "is_available": false
+    }
+  },
+  {
+    "model": "app.document",
+    "pk": 8,
+    "fields": {
+      "name": "Proof of Work Experience",
+      "is_available": false
+    }
+  },
+  {
+    "model": "app.document",
+    "pk": 9,
+    "fields": {
+      "name": "GRE Scores",
+      "is_available": false
+    }
+  },
+  {
+    "model": "app.document",
+    "pk": 10,
+    "fields": {
+      "name": "Passport Copy",
+      "is_available": false
+    }
+  },
+  {
+    "model": "app.document",
+    "pk": 11,
+    "fields": {
+      "name": "Passport-Sized Photos",
+      "is_available": false
+    }
+  },
+  {
+    "model": "app.document",
+    "pk": 12,
+    "fields": {
+      "name": "Proof of Application Fee Payment",
+      "is_available": false
+    }
+  },
+  {
+    "model": "app.document",
+    "pk": 13,
+    "fields": {
+      "name": "APS Certificate",
+      "is_available": false
+    }
+  },
+  {
+    "model": "app.document",
+    "pk": 14,
+    "fields": {
+      "name": "Portfolio",
+      "is_available": false
+    }
+  },
+  {
+    "model": "app.document",
+    "pk": 15,
+    "fields": {
+      "name": "Health Insurance Proof (after admission)",
+      "is_available": false
+    }
+  },
+  {
+    "model": "app.document",
+    "pk": 16,
+    "fields": {
+      "name": "Proof of Financial Resources (after admission)",
+      "is_available": false
+    }
+  }
+]
