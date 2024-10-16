@@ -32,6 +32,9 @@ class UniversityProgram(models.Model):
     support_for_international_students = models.TextField(blank=True)
     supervisor_student_ratio = models.CharField(max_length=100, blank=True)
     about_university = models.TextField()
+    link = models.URLField(max_length=500, blank=True, help_text="URL of the program")  # New link field
+
+
     is_checked = models.BooleanField(default=False, help_text="Have you reviewed this program?")
     is_sufficient = models.BooleanField(default=True, help_text="Does this program meet your requirements?")
     personal_note = models.TextField(blank=True, help_text="Your personal notes about this program")

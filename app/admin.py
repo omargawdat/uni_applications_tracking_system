@@ -18,7 +18,8 @@ class UniversityProgramAdmin(ModelAdmin):
     compressed_fields = True
 
     list_display = (
-        'name', 'university', 'field', 'degree', 'teaching_language', 'application_deadline_display', 'is_checked',
+        'name', 'university', 'field', 'degree', 'teaching_language', 'application_deadline_display',
+        'is_checked',
         'is_sufficient', 'application_status')
     list_filter = ('field', 'degree', 'teaching_language', 'is_checked', 'is_sufficient', 'applicationtracking__status')
     search_fields = ('name', 'university', 'description', 'personal_note')
@@ -26,7 +27,7 @@ class UniversityProgramAdmin(ModelAdmin):
 
     fieldsets = (
         ('Basic Information', {
-            'fields': ('name', 'university', 'field', 'degree', 'teaching_language', 'languages',
+            'fields': ('link', 'name', 'university', 'field', 'degree', 'teaching_language', 'languages',
                        'full_time_part_time', 'program_duration', 'beginning'),
             'classes': ['tab']
         }),

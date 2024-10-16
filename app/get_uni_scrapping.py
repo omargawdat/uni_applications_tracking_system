@@ -81,13 +81,13 @@ def scrape_all_programs(api_url):
         scraper = ProgramScraper(link)
         try:
             program_info = scraper.scrape_program_info()
+            program_info['link'] = link
             all_program_info.append(program_info)
         except Exception as e:
             print(f"Failed to scrape program information: {str(e)}")
         time.sleep(1)  # Be polite to the server
 
     return all_program_info
-
 
 def main():
     api_url = "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?cert=&admReq=&langExamPC=&scholarshipLC=&langExamLC=&scholarshipSC=&langExamSC=&degree%5B%5D=2&fos=6&langDeAvailable=&langEnAvailable=&fee=3&bgn%5B%5D=2&sort=4&dur=&subjects%5B%5D=49&q=&limit=3&offset=&display=grid&isElearning=&isSep="
