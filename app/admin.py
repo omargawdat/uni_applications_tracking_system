@@ -22,8 +22,7 @@ class UniversityProgramAdmin(ModelAdmin):
 
     # Display the most important fields in the list view of the admin panel
     list_display = (
-        'name', 'university', 'degree', 'teaching_language', 'application_deadline',
-        'status'
+        'name', 'university','status'
     )
 
     # Filters for the list view
