@@ -128,3 +128,96 @@ Not Found: /favicon.ico
 [15/Nov/2024 17:04:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 [15/Nov/2024 17:04:16] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 40910
 [15/Nov/2024 17:04:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[15/Nov/2024 17:04:46] "GET /admin/app/universityprogram/ HTTP/1.1" 200 354900
+[15/Nov/2024 17:04:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[15/Nov/2024 17:04:48] "GET /admin/app/universityprogram/?q=fau HTTP/1.1" 200 80000
+[15/Nov/2024 17:04:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[15/Nov/2024 17:04:55] "GET /admin/app/universityprogram/260/change/?_changelist_filters=q%3Dfau HTTP/1.1" 200 77572
+[15/Nov/2024 17:04:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[15/Nov/2024 17:06:03] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 40910
+[15/Nov/2024 17:06:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[15/Nov/2024 17:06:06] "GET /admin/app/applicationtracking/add/ HTTP/1.1" 200 29291
+[15/Nov/2024 17:06:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 15, 2024 - 14:54:07
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/management/base.py", line 563, in check
+    raise SystemCheckError(msg)
+django.core.management.base.SystemCheckError: SystemCheckError: System check identified some issues:
+
+ERRORS:
+app.ApplicationTracking.field: (fields.E009) 'max_length' is too small to fit the longest value in 'choices' (4 characters).
+
+System check identified 1 issue (0 silenced).
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/models.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/management/base.py", line 563, in check
+    raise SystemCheckError(msg)
+django.core.management.base.SystemCheckError: SystemCheckError: System check identified some issues:
+
+ERRORS:
+app.ApplicationTracking.field: (fields.E009) 'max_length' is too small to fit the longest value in 'choices' (4 characters).
+
+System check identified 1 issue (0 silenced).
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/models.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/management/base.py", line 563, in check
+    raise SystemCheckError(msg)
+django.core.management.base.SystemCheckError: SystemCheckError: System check identified some issues:
+
+ERRORS:
+app.ApplicationTracking.field: (fields.E009) 'max_length' is too small to fit the longest value in 'choices' (4 characters).
+
+System check identified 1 issue (0 silenced).
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/models.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+[15/Nov/2024 17:07:07] "GET /admin/app/applicationtracking/add/ HTTP/1.1" 200 29333
+[15/Nov/2024 17:07:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[15/Nov/2024 17:07:08] "GET /admin/app/applicationtracking/add/ HTTP/1.1" 200 29333
+[15/Nov/2024 17:07:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[15/Nov/2024 17:07:20] "POST /admin/app/applicationtracking/add/ HTTP/1.1" 302 0
+[15/Nov/2024 17:07:20] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 45244
+[15/Nov/2024 17:07:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3342

@@ -100,12 +100,13 @@ class Document(models.Model):
 class ApplicationTracking(models.Model):
     university = models.CharField(max_length=255, default="")
     field = models.CharField(
-        max_length=3,
+        max_length=30,
         choices=[
             ('AI', 'Artificial Intelligence'),
             ('CS', 'Computer Science'),
             ('CYB', 'Cyber Security'),
-            ('DS', 'Data Science')
+            ('DS', 'Data Science'),
+            ('AUTO', "Autonomy")
         ],
         null=True,
         help_text="Main field of study"
