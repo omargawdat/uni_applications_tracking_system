@@ -85,11 +85,8 @@ class UniversityProgram(models.Model):
 class ApplicationStatus(models.TextChoices):
     NOT_STARTED = 'NS', 'Not Started'
     IN_PROGRESS = 'IP', 'In Progress'
-    SUBMITTED = 'SU', 'Submitted'
-    UNDER_REVIEW = 'UR', 'Under Review'
     ACCEPTED = 'AC', 'Accepted'
     REJECTED = 'RE', 'Rejected'
-    WAITLISTED = 'WL', 'Waitlisted'
 
 
 class Document(models.Model):
@@ -101,13 +98,7 @@ class Document(models.Model):
 
 
 class ApplicationTracking(models.Model):
-    university_program = models.OneToOneField(UniversityProgram, on_delete=models.CASCADE)
-
-    status = models.CharField(
-        max_length=2,
-        choices=ApplicationStatus.choices,
-        default=ApplicationStatus.NOT_STARTED,
-    )
+    university = models.CharField(max_length=255, default="")
     field = models.CharField(
         max_length=3,
         choices=[
@@ -117,18 +108,13 @@ class ApplicationTracking(models.Model):
             ('DS', 'Data Science')
         ],
         null=True,
-        blank=True,
         help_text="Main field of study"
     )
+    status = models.CharField(
+        max_length=2,
+        choices=ApplicationStatus.choices,
+        default=ApplicationStatus.NOT_STARTED,
+    )
+    url = models.URLField(max_length=500, null=True, blank=True)
     application_submission_date = models.DateField(null=True, blank=True)
-    priority = models.IntegerField(default=0, choices=[(i, i) for i in range(1, 6)])
-    required_docs = models.ManyToManyField(Document, related_name='required_in_applications', blank=True)
-    start_date = models.DateField(null=True, blank=True, help_text="Application start date")
-    end_date = models.DateField(null=True, blank=True, help_text="Application end date")
     notes = models.TextField(blank=True)
-
-    def __str__(self):
-        return f"Application for {self.university_program.name}"
-
-    class Meta:
-        ordering = ['priority']

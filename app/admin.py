@@ -7,13 +7,6 @@ from .models import Document
 from .models import UniversityProgram
 
 
-class ApplicationTrackingInline(StackedInline):
-    model = ApplicationTracking
-    extra = 0
-    fields = ('status', 'field', 'start_date', 'end_date', 'priority', 'application_submission_date',  'notes')
-    classes = ['collapse']
-
-
 @admin.register(UniversityProgram)
 class UniversityProgramAdmin(ModelAdmin):
     list_fullwidth = True
@@ -31,8 +24,6 @@ class UniversityProgramAdmin(ModelAdmin):
     # Searchable fields
     search_fields = ('name', 'university', 'description', 'personal_note')
 
-    # Inline model (assuming ApplicationTracking is related)
-    inlines = [ApplicationTrackingInline]
 
     # Fieldsets to group fields in the form view
     fieldsets = (
@@ -74,45 +65,12 @@ class ApplicationTrackingAdmin(ModelAdmin):
     list_horizontal_scrollbar_top = True
     compressed_fields = True
 
-    # Display more relevant fields in the list view
-    list_display = (
-        'university_program', 'status', 'field', 'get_needed_docs'
-    )
+    list_display = ('university', 'field', 'notes', 'application_submission_date', 'status', )
 
-    # Filter options to easily narrow down by status and priority
-    list_filter = ('status', 'priority', 'start_date', 'end_date')
+    list_filter = ('status', 'field')
 
-    # Search across more fields for improved admin usability
-    search_fields = ('university_program__name', 'university_program__university', 'notes')
+    search_fields = ('university', 'notes')
 
-    # Group related fields in the form using fieldsets
-    fieldsets = (
-        ('Program Information', {
-            'fields': ('university_program', 'field',)
-        }),
-        ('Application Tracking', {
-            'fields': ('status', 'priority', 'application_submission_date', 'start_date', 'end_date',)
-        }),
-        ('Documents', {
-            'fields': ('required_docs',)
-        }),
-        ('Notes', {
-            'fields': ('notes',)
-        }),
-    )
-
-    filter_horizontal = ('required_docs',)
-
-    # Method to display needed documents in the list display
-    def get_needed_docs(self, obj):
-        # Return a formatted list of required documents
-        needed_docs = obj.required_docs.all()
-        if needed_docs.exists():
-            return format_html("<br>".join([doc.name for doc in needed_docs]))
-        return "No documents required"
-
-    # Customize the column name in the admin interface
-    get_needed_docs.short_description = 'Needed Documents'
 
 
 @admin.register(Document)
