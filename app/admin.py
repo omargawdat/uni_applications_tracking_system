@@ -88,7 +88,7 @@ class ApplicationTrackingInline(TabularInline):
     model = ApplicationTracking
     extra = 0
     classes = ['collapse']
-    exclude = ["notes", ]
+    # exclude = ["notes", ]
     can_delete = False
     show_change_link = True
 
@@ -109,4 +109,10 @@ class ApplicationTrackingInline(TabularInline):
 
 @admin.register(University)
 class UniversityAdmin(ModelAdmin):
+    list_display = ('name', 'display_applied_programs', 'notes')
     inlines = [ApplicationTrackingInline]
+
+    # display count of applied programs
+    @admin.display(description='Applied Programs')
+    def display_applied_programs(self, obj):
+        return obj.applications.count()

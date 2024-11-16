@@ -92,6 +92,7 @@ class ApplicationStatus(models.TextChoices):
 class University(models.Model):
     name = models.CharField(max_length=255)
     url = models.URLField(max_length=500, null=True, blank=True)
+    notes = models.TextField(blank=True)
 
     def __str__(self):
         return self.name
@@ -126,6 +127,5 @@ class ApplicationTracking(models.Model):
         null=True,
         help_text="Main field of study"
     )
-    # url = models.URLField(max_length=500, null=True, blank=True)
     application_submission_date = models.DateField(null=True, blank=True)
     notes = models.TextField(blank=True)

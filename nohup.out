@@ -2503,3 +2503,294 @@ Watching for file changes with StatReloader
 [16/Nov/2024 08:11:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 [16/Nov/2024 08:11:05] "GET /admin/app/university/1/change/ HTTP/1.1" 200 58932
 [16/Nov/2024 08:11:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:13:39] "GET /admin/app/university/1/change/ HTTP/1.1" 200 58932
+[16/Nov/2024 08:13:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:13:40] "GET /admin/app/university/1/change/ HTTP/1.1" 200 58932
+[16/Nov/2024 08:13:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:13:41] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 47967
+[16/Nov/2024 08:13:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:13:43] "GET /admin/app/university/ HTTP/1.1" 200 25788
+[16/Nov/2024 08:13:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:13:44] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 47967
+[16/Nov/2024 08:13:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 08:10:34
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x0000000200b33840 (most recent call first):
+  <no Python frame>
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/models.py changed, reloading.
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/models.py changed, reloading.
+Fatal Python error: init_sys_streamsFatal Python error: : init_sys_streamscan't initialize sys standard streams: 
+can't initialize sys standard streamsPython runtime state: 
+core initializedPython runtime state: 
+core initialized
+OSErrorOSError: : [Errno 9] Bad file descriptor[Errno 9] Bad file descriptor
+
+
+
+Current thread 0xCurrent thread 0x0000000200b338400000000200b33840 (most recent call first):
+ (most recent call first):
+  <no Python frame>
+  <no Python frame>
+Watching for file changes with StatReloader
+[16/Nov/2024 08:31:45] "GET /admin/ HTTP/1.1" 200 32789
+[16/Nov/2024 08:31:45] "GET /admin/ HTTP/1.1" 200 32789
+[16/Nov/2024 08:31:46] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 47967
+[16/Nov/2024 08:31:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:31:47] "GET /admin/app/university/ HTTP/1.1" 200 25788
+[16/Nov/2024 08:31:47] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:31:49] "GET /admin/app/applicationtracking/4/change/ HTTP/1.1" 200 31547
+[16/Nov/2024 08:31:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:31:51] "GET /admin/app/university/1/change/ HTTP/1.1" 200 60190
+[16/Nov/2024 08:31:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:31:53] "POST /admin/app/university/1/change/ HTTP/1.1" 302 0
+[16/Nov/2024 08:31:53] "GET /admin/app/university/ HTTP/1.1" 200 26178
+[16/Nov/2024 08:31:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 08:31:45
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/management/commands/runserver.py", line 134, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/management/base.py", line 563, in check
+    raise SystemCheckError(msg)
+django.core.management.base.SystemCheckError: SystemCheckError: System check identified some issues:
+
+ERRORS:
+<class 'app.admin.UniversityAdmin'>: (admin.E108) The value of 'list_display[1]' refers to 'country', which is not a callable or attribute of 'UniversityAdmin', or an attribute, method, or field on 'app.University'.
+<class 'app.admin.UniversityAdmin'>: (admin.E108) The value of 'list_display[2]' refers to 'city', which is not a callable or attribute of 'UniversityAdmin', or an attribute, method, or field on 'app.University'.
+<class 'app.admin.UniversityAdmin'>: (admin.E108) The value of 'list_display[3]' refers to 'website', which is not a callable or attribute of 'UniversityAdmin', or an attribute, method, or field on 'app.University'.
+
+System check identified 3 issues (0 silenced).
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 08:32:16
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[16/Nov/2024 08:32:23] "GET /admin/app/applicationtracking/4/change/ HTTP/1.1" 200 31547
+[16/Nov/2024 08:32:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:32:24] "GET /admin/app/applicationtracking/4/change/ HTTP/1.1" 200 31547
+[16/Nov/2024 08:32:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:32:24] "GET /admin/app/applicationtracking/4/change/ HTTP/1.1" 200 31547
+[16/Nov/2024 08:32:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:32:27] "GET /admin/app/university/ HTTP/1.1" 200 28309
+[16/Nov/2024 08:32:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:32:28] "GET /admin/app/university/ HTTP/1.1" 200 28309
+[16/Nov/2024 08:32:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 08:32:21
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[16/Nov/2024 08:32:34] "GET /admin/app/university/ HTTP/1.1" 200 26979
+[16/Nov/2024 08:32:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:32:34] "GET /admin/app/university/ HTTP/1.1" 200 26979
+[16/Nov/2024 08:32:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:32:34] "GET /admin/app/university/ HTTP/1.1" 200 26979
+[16/Nov/2024 08:32:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:32:37] "GET /admin/app/university/1/change/ HTTP/1.1" 200 60208
+[16/Nov/2024 08:32:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:32:39] "GET /admin/app/university/ HTTP/1.1" 200 26979
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 08:32:33
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 08:33:04
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 08:33:08
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/management/commands/runserver.py", line 126, in inner_run
+    autoreload.raise_last_exception()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/autoreload.py", line 87, in raise_last_exception
+    raise _exception[1]
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/management/__init__.py", line 394, in execute
+    autoreload.check_errors(django.setup)()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/apps/registry.py", line 124, in populate
+    app_config.ready()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/contrib/admin/apps.py", line 27, in ready
+    self.module.autodiscover()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/contrib/admin/__init__.py", line 52, in autodiscover
+    autodiscover_modules("admin", register_to=site)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/module_loading.py", line 58, in autodiscover_modules
+    import_module("%s.%s" % (app_config.name, module_to_search))
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py", line 112
+    list_display = ('name',  'display_applied_programs',notes')
+                                                             ^
+SyntaxError: unterminated string literal (detected at line 112)
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 08:33:21
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[16/Nov/2024 08:33:25] "GET /admin/app/university/ HTTP/1.1" 200 28249
+[16/Nov/2024 08:33:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:33:25] "GET /admin/app/university/ HTTP/1.1" 200 28249
+[16/Nov/2024 08:33:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:33:25] "GET /admin/app/university/ HTTP/1.1" 200 28249
+[16/Nov/2024 08:33:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:33:26] "GET /admin/app/university/ HTTP/1.1" 200 28249
+[16/Nov/2024 08:33:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:33:42] "GET /admin/app/university/1/change/ HTTP/1.1" 200 60208
+[16/Nov/2024 08:33:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:33:45] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 47967
+[16/Nov/2024 08:33:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:33:49] "GET /admin/app/applicationtracking/4/change/ HTTP/1.1" 200 31547
+[16/Nov/2024 08:33:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:33:49] "GET /admin/app/applicationtracking/2/change/ HTTP/1.1" 200 31548
+[16/Nov/2024 08:33:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:33:50] "GET /admin/app/applicationtracking/1/change/ HTTP/1.1" 200 31548
+[16/Nov/2024 08:33:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:33:54] "POST /admin/app/applicationtracking/4/change/ HTTP/1.1" 302 0
+[16/Nov/2024 08:33:54] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 48386
+[16/Nov/2024 08:33:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:34:01] "POST /admin/app/applicationtracking/2/change/ HTTP/1.1" 302 0
+[16/Nov/2024 08:34:01] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 48368
+[16/Nov/2024 08:34:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:34:03] "POST /admin/app/applicationtracking/1/change/ HTTP/1.1" 302 0
+[16/Nov/2024 08:34:04] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 48350
+[16/Nov/2024 08:34:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 08:33:25
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[16/Nov/2024 08:34:26] "GET /admin/app/university/ HTTP/1.1" 200 28249
+[16/Nov/2024 08:34:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:34:27] "GET /admin/app/university/1/change/ HTTP/1.1" 200 67012
+[16/Nov/2024 08:34:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:34:28] "GET /admin/app/university/1/change/ HTTP/1.1" 200 67012
+[16/Nov/2024 08:34:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:34:30] "GET /admin/app/university/ HTTP/1.1" 200 28249
+[16/Nov/2024 08:34:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:34:31] "GET /admin/app/university/1/change/ HTTP/1.1" 200 67012
+[16/Nov/2024 08:34:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 08:34:32] "GET /admin/app/university/1/change/ HTTP/1.1" 200 67012
+[16/Nov/2024 08:34:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 09:04:28] "GET /admin/ HTTP/1.1" 302 0
+[16/Nov/2024 09:04:28] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 9468
+[16/Nov/2024 09:04:28] "GET /static/unfold/fonts/material-symbols/styles.css HTTP/1.1" 200 557
+[16/Nov/2024 09:04:28] "GET /static/unfold/css/simplebar.css HTTP/1.1" 200 4647
+[16/Nov/2024 09:04:28] "GET /static/unfold/fonts/inter/styles.css HTTP/1.1" 200 608
+[16/Nov/2024 09:04:28] "GET /static/unfold/js/htmx.js HTTP/1.1" 200 42820
+[16/Nov/2024 09:04:28] "GET /static/unfold/js/app.js HTTP/1.1" 200 7440
+[16/Nov/2024 09:04:28] "GET /static/unfold/css/styles.css HTTP/1.1" 200 98178
+[16/Nov/2024 09:04:28] "GET /static/unfold/js/simplebar.js HTTP/1.1" 200 27176
+[16/Nov/2024 09:04:28] "GET /static/unfold/js/chart.js HTTP/1.1" 200 200633
+[16/Nov/2024 09:04:28] "GET /static/unfold/js/alpine.anchor.js HTTP/1.1" 200 15524
+[16/Nov/2024 09:04:28] "GET /static/unfold/js/alpine.persist.js HTTP/1.1" 200 837
+[16/Nov/2024 09:04:28] "GET /static/unfold/js/alpine.js HTTP/1.1" 200 44659
+[16/Nov/2024 09:04:29] "GET /static/unfold/fonts/inter/Inter-Medium.woff2 HTTP/1.1" 200 46552
+[16/Nov/2024 09:04:29] "GET /static/unfold/fonts/inter/Inter-SemiBold.woff2 HTTP/1.1" 200 46552
+[16/Nov/2024 09:04:29] "GET /static/unfold/fonts/inter/Inter-Regular.woff2 HTTP/1.1" 200 46552
+[16/Nov/2024 09:04:29] "GET /static/unfold/fonts/material-symbols/Material-Symbols-Outlined.woff2 HTTP/1.1" 200 349864
+Not Found: /favicon.ico
+[16/Nov/2024 09:04:29] "GET /favicon.ico HTTP/1.1" 404 2212
+[16/Nov/2024 09:04:31] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[16/Nov/2024 09:04:31] "GET /admin/ HTTP/1.1" 200 32730
+[16/Nov/2024 09:04:32] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 47914
+[16/Nov/2024 09:04:33] "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+[16/Nov/2024 09:04:33] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9048
+[16/Nov/2024 09:04:33] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[16/Nov/2024 09:04:33] "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+[16/Nov/2024 09:04:33] "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+[16/Nov/2024 09:04:33] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[16/Nov/2024 09:04:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 09:04:33] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+[16/Nov/2024 09:04:33] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+[16/Nov/2024 09:04:33] "GET /admin/app/universityprogram/ HTTP/1.1" 200 436867
+[16/Nov/2024 09:04:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
