@@ -84,6 +84,7 @@ class UniversityProgram(models.Model):
 class ApplicationStatus(models.TextChoices):
     NOT_STARTED = 'NS', 'Not Started'
     IN_PROGRESS = 'IP', 'In Progress'
+    REQUIREMENTS_BARELY_MET = 'RM', 'Requirements Barely Met'
     ACCEPTED = 'AC', 'Accepted'
     REJECTED = 'RE', 'Rejected'
 
@@ -132,3 +133,4 @@ class ApplicationTracking(models.Model):
     )
     application_submission_date = models.DateField(null=True, blank=True)
     notes = models.TextField(blank=True)
+    program_url = models.URLField(max_length=500, null=True, blank=True)

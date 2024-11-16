@@ -98,7 +98,8 @@ class ApplicationTrackingInline(TabularInline):
                 When(status=ApplicationStatus.ACCEPTED, then=Value(1)),
                 When(status=ApplicationStatus.IN_PROGRESS, then=Value(2)),
                 When(status=ApplicationStatus.NOT_STARTED, then=Value(3)),
-                When(status=ApplicationStatus.REJECTED, then=Value(4)),
+                When(status=ApplicationStatus.REQUIREMENTS_BARELY_MET, then=Value(4)),
+                When(status=ApplicationStatus.REJECTED, then=Value(5)),
                 default=Value(5),
             ),
         )
@@ -116,9 +117,9 @@ class UniversityAdmin(ModelAdmin):
     def get_ordering(self, request):
         return (
             Case(
-                When(status=University.Status.FULLY_CHECKED, then=Value(1)),
-                When(status=University.Status.PARTIALLY_CHECKED, then=Value(2)),
                 When(status=University.Status.NOT_CHECKED, then=Value(3)),
+                When(status=University.Status.PARTIALLY_CHECKED, then=Value(2)),
+                When(status=University.Status.FULLY_CHECKED, then=Value(1)),
                 default=Value(4),
             ),
         )

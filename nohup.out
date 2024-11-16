@@ -3032,3 +3032,90 @@ Quit the server with CONTROL-C.
 Watching for file changes with StatReloader
 [16/Nov/2024 10:55:27] "GET /admin/app/university/ HTTP/1.1" 200 315472
 [16/Nov/2024 10:55:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 10:55:20
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x0000000200b33840 (most recent call first):
+  <no Python frame>
+Watching for file changes with StatReloader
+[16/Nov/2024 11:01:10] "GET /admin/app/university/177/change/ HTTP/1.1" 200 41554
+[16/Nov/2024 11:01:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:01:10] "GET /admin/app/university/177/change/ HTTP/1.1" 200 41554
+[16/Nov/2024 11:01:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:01:53] "POST /admin/app/university/177/change/ HTTP/1.1" 302 0
+[16/Nov/2024 11:01:53] "GET /admin/app/university/ HTTP/1.1" 200 315886
+[16/Nov/2024 11:01:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:01:56] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 55697
+[16/Nov/2024 11:01:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 11:01:09
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 11:02:24
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 11:02:29
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 11:02:35
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 11:03:04
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[16/Nov/2024 11:03:07] "GET /admin/app/university/ HTTP/1.1" 200 315474
+[16/Nov/2024 11:03:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:03:07] "GET /admin/app/university/ HTTP/1.1" 200 315474
+[16/Nov/2024 11:03:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:03:08] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 55697
+[16/Nov/2024 11:03:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:03:09] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 55697
+[16/Nov/2024 11:03:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:03:10] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 55697
+[16/Nov/2024 11:03:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:03:10] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 55697
+[16/Nov/2024 11:03:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
