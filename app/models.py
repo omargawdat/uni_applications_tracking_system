@@ -94,9 +94,10 @@ class University(models.Model):
         FULLY_CHECKED = 'fully_checked', 'Fully Checked'
         PARTIALLY_CHECKED = 'partially_checked', 'Partially Checked'
         NOT_CHECKED = 'not_checked', 'Not Checked'
+        WAITING_FOR_APPLICATION = 'waiting_for_application', 'Waiting for Application Time'
 
     status = models.CharField(
-        max_length=20,
+        max_length=30,
         choices=Status.choices,
         default=Status.NOT_CHECKED
     )

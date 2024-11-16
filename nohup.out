@@ -3161,3 +3161,136 @@ Watching for file changes with StatReloader
 [16/Nov/2024 11:04:43] "GET /admin/app/university/177/change/ HTTP/1.1" 200 58594
 [16/Nov/2024 11:04:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 [16/Nov/2024 11:04:43] "GET /admin/app/university/ HTTP/1.1" 200 315474
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 11:04:06
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[16/Nov/2024 11:04:58] "GET /admin/app/university/ HTTP/1.1" 200 315474
+[16/Nov/2024 11:04:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:04:58] "GET /admin/app/university/ HTTP/1.1" 200 315474
+[16/Nov/2024 11:04:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 11:04:57
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[16/Nov/2024 11:05:24] "GET /admin/app/university/ HTTP/1.1" 200 277032
+[16/Nov/2024 11:05:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:05:24] "GET /admin/app/university/ HTTP/1.1" 200 277032
+[16/Nov/2024 11:05:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:05:25] "GET /admin/app/university/ HTTP/1.1" 200 277032
+[16/Nov/2024 11:05:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:05:25] "GET /admin/app/university/ HTTP/1.1" 200 277032
+[16/Nov/2024 11:05:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:05:25] "GET /admin/app/university/ HTTP/1.1" 200 277032
+[16/Nov/2024 11:05:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 11:05:24
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 11:05:35
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[16/Nov/2024 11:05:37] "GET /admin/app/university/ HTTP/1.1" 200 277032
+[16/Nov/2024 11:05:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:05:38] "GET /admin/app/university/ HTTP/1.1" 200 277032
+[16/Nov/2024 11:05:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:05:38] "GET /admin/app/university/ HTTP/1.1" 200 277032
+[16/Nov/2024 11:05:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:06:25] "GET /admin/app/university/ HTTP/1.1" 200 277032
+[16/Nov/2024 11:06:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:06:28] "GET /admin/app/university/176/change/ HTTP/1.1" 200 41543
+[16/Nov/2024 11:06:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:06:37] "GET /admin/app/university/176/change/ HTTP/1.1" 200 41543
+[16/Nov/2024 11:06:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:06:37] "GET /admin/app/university/ HTTP/1.1" 200 277032
+[16/Nov/2024 11:06:38] "GET /admin/app/university/176/change/ HTTP/1.1" 200 41543
+[16/Nov/2024 11:06:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:47:55] "GET /admin/ HTTP/1.1" 200 33389
+[16/Nov/2024 11:47:57] "GET /admin/app/universityprogram/ HTTP/1.1" 200 658573
+[16/Nov/2024 11:47:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:48:10] "GET /admin/app/universityprogram/ HTTP/1.1" 200 658573
+[16/Nov/2024 11:48:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:48:28] "GET /admin/app/universityprogram/243/change/ HTTP/1.1" 200 72025
+[16/Nov/2024 11:48:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:48:33] "GET /admin/app/universityprogram/243/change/ HTTP/1.1" 200 72025
+[16/Nov/2024 11:48:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:48:44] "GET /admin/app/universityprogram/243/change/ HTTP/1.1" 200 72025
+[16/Nov/2024 11:59:31] "GET /admin/app/university/176/change/ HTTP/1.1" 200 41543
+[16/Nov/2024 11:59:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:59:36] "POST /admin/app/university/176/change/ HTTP/1.1" 302 0
+[16/Nov/2024 11:59:36] "GET /admin/app/university/ HTTP/1.1" 200 277444
+[16/Nov/2024 11:59:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:59:37] "GET /admin/app/university/176/change/ HTTP/1.1" 200 42035
+[16/Nov/2024 11:59:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 12:06:32] "GET /admin/ HTTP/1.1" 200 33281
+[16/Nov/2024 12:06:34] "GET /admin/app/university/ HTTP/1.1" 200 277032
+[16/Nov/2024 12:06:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 12:08:09] "GET /admin/app/university/ HTTP/1.1" 200 277032
+[16/Nov/2024 12:08:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Not Found: /favicon.ico
+[16/Nov/2024 12:08:09] "GET /favicon.ico HTTP/1.1" 404 2212
+[16/Nov/2024 12:08:11] "GET /admin/app/university/1/change/ HTTP/1.1" 200 75615
+[16/Nov/2024 12:08:11] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 12:48:48] "POST /admin/app/university/176/change/ HTTP/1.1" 302 0
+[16/Nov/2024 12:48:48] "GET /admin/app/university/ HTTP/1.1" 200 277444
+[16/Nov/2024 12:48:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 12:49:37] "GET /admin/app/university/176/change/ HTTP/1.1" 200 50457
+[16/Nov/2024 12:49:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 13:01:56] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 59338
+[16/Nov/2024 13:01:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 13:01:57] "GET /admin/app/university/ HTTP/1.1" 200 277032
+[16/Nov/2024 13:01:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 13:01:58] "GET /admin/app/university/176/change/ HTTP/1.1" 200 50457
+[16/Nov/2024 13:01:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 13:02:35] "POST /admin/app/university/176/change/ HTTP/1.1" 302 0
+[16/Nov/2024 13:02:35] "GET /admin/app/university/176/change/ HTTP/1.1" 200 59606
+[16/Nov/2024 13:02:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 13:03:42] "GET /admin/app/university/ HTTP/1.1" 200 277032
+[16/Nov/2024 13:03:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 13:03:43] "GET /admin/app/university/176/change/ HTTP/1.1" 200 59165
+[16/Nov/2024 13:03:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 13:03:52] "POST /admin/app/university/176/change/ HTTP/1.1" 302 0
+[16/Nov/2024 13:03:52] "GET /admin/app/university/ HTTP/1.1" 200 277446
+[16/Nov/2024 13:03:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 13:04:05] "GET /admin/app/university/175/change/ HTTP/1.1" 200 41531
+[16/Nov/2024 13:04:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 11:05:36
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x0000000200b33840 (most recent call first):
+  <no Python frame>
