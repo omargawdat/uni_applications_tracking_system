@@ -109,7 +109,7 @@ class ApplicationTrackingInline(TabularInline):
 
 @admin.register(University)
 class UniversityAdmin(ModelAdmin):
-    list_display = ('name', 'display_applied_programs', 'notes')
+    list_display = ('id', 'name', 'display_applied_programs', 'notes')
     inlines = [ApplicationTrackingInline]
 
     # display count of applied programs
