@@ -137,6 +137,17 @@ UNFOLD = {
                 ],
             },
             {
+                "separator": True,
+                "items": [
+                    {
+                        "title": _("Universities"),
+                        "icon": "account_balance",
+                        "link": reverse_lazy("admin:app_university_changelist"),
+                        "permission": lambda request: request.user.has_perm("app.view_university"),
+                    },
+                ],
+            },
+            {
                 # "title": _("Application Tracking"),
                 "separator": True,
                 "items": [
@@ -148,7 +159,8 @@ UNFOLD = {
                     }
 
                 ],
-            }
+            },
+
         ],
     },
 }

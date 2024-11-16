@@ -1,9 +1,8 @@
 from django.contrib import admin
 from django.db.models import Case, When, Value
-from django.utils.html import format_html
-from unfold.admin import ModelAdmin, StackedInline
+from unfold.admin import ModelAdmin, TabularInline
 
-from .models import ApplicationTracking, ApplicationStatus
+from .models import ApplicationTracking, ApplicationStatus, University
 from .models import UniversityProgram
 
 
@@ -72,7 +71,6 @@ class ApplicationTrackingAdmin(ModelAdmin):
 
     list_filter = ('status', 'field')
 
-    search_fields = ('university', 'notes')
 
     def get_ordering(self, request):
         return (
@@ -85,3 +83,30 @@ class ApplicationTrackingAdmin(ModelAdmin):
             ),
         )
 
+
+class ApplicationTrackingInline(TabularInline):
+    model = ApplicationTracking
+    extra = 0
+    classes = ['collapse']
+    exclude = ["notes", ]
+    can_delete = False
+    show_change_link = True
+
+    def get_ordering(self, request):
+        return (
+            Case(
+                When(status=ApplicationStatus.ACCEPTED, then=Value(1)),
+                When(status=ApplicationStatus.IN_PROGRESS, then=Value(2)),
+                When(status=ApplicationStatus.NOT_STARTED, then=Value(3)),
+                When(status=ApplicationStatus.REJECTED, then=Value(4)),
+                default=Value(5),
+            ),
+        )
+
+    def has_change_permission(self, request, obj=None):
+        return False
+
+
+@admin.register(University)
+class UniversityAdmin(ModelAdmin):
+    inlines = [ApplicationTrackingInline]

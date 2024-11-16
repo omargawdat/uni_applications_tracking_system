@@ -89,15 +89,30 @@ class ApplicationStatus(models.TextChoices):
     REJECTED = 'RE', 'Rejected'
 
 
+class University(models.Model):
+    name = models.CharField(max_length=255)
+    url = models.URLField(max_length=500, null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name_plural = "Universities"
 
 
 class ApplicationTracking(models.Model):
+    university= models.ForeignKey(
+        University,
+        on_delete=models.CASCADE,
+        related_name='applications',
+        null=True,
+    )
     status = models.CharField(
         max_length=2,
         choices=ApplicationStatus.choices,
         default=ApplicationStatus.NOT_STARTED,
     )
-    university = models.CharField(max_length=255, default="")
+
     field = models.CharField(
         max_length=30,
         choices=[
@@ -111,6 +126,6 @@ class ApplicationTracking(models.Model):
         null=True,
         help_text="Main field of study"
     )
-    url = models.URLField(max_length=500, null=True, blank=True)
+    # url = models.URLField(max_length=500, null=True, blank=True)
     application_submission_date = models.DateField(null=True, blank=True)
     notes = models.TextField(blank=True)
