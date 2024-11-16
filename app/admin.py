@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.db.models import Case, When, Value
+from django.utils import timezone
 from unfold.admin import ModelAdmin, TabularInline
 
 from .models import ApplicationTracking, ApplicationStatus, University
@@ -56,7 +57,8 @@ class UniversityProgramAdmin(ModelAdmin):
         }),
         ('Other', {
             'fields': (
-                "personal_note", 'combined_phd', 'joint_degree', 'diploma_supplement', 'international_elements', "program_duration"),
+                "personal_note", 'combined_phd', 'joint_degree', 'diploma_supplement', 'international_elements',
+                "program_duration"),
             'classes': ['tab']
         }),
     )
@@ -67,10 +69,9 @@ class ApplicationTrackingAdmin(ModelAdmin):
     list_fullwidth = True
     list_horizontal_scrollbar_top = True
     compressed_fields = True
-    list_display = ('university', 'field', 'notes', 'application_submission_date', 'status', )
+    list_display = ('university', 'field', 'notes', 'application_submission_date', 'status',)
 
     list_filter = ('status', 'field')
-
 
     def get_ordering(self, request):
         return (
@@ -117,12 +118,21 @@ class UniversityAdmin(ModelAdmin):
     def get_ordering(self, request):
         return (
             Case(
-                When(status=University.Status.NOT_CHECKED, then=Value(0)),
-                When(status=University.Status.WAITING_FOR_APPLICATION, then=Value(1)),
-                When(status=University.Status.PARTIALLY_CHECKED, then=Value(2)),
-                When(status=University.Status.FULLY_CHECKED, then=Value(3)),
-                default=Value(4),
+                When(
+                    status=University.Status.WAITING_FOR_APPLICATION,
+                    start_time__lte=timezone.now().date(),
+                    then=Value(0)
+                ),
+                When(status=University.Status.NOT_CHECKED, then=Value(1)),
+                When(status=University.Status.WAITING_FOR_APPLICATION, then=Value(2)),
+                When(status=University.Status.PARTIALLY_CHECKED, then=Value(3)),
+                When(status=University.Status.UNI_ASSIST, then=Value(4)),
+                When(status=University.Status.FULLY_CHECKED, then=Value(5)),
+                default=Value(5),
             ),
+            # Secondary ordering by start time for WAITING status
+            'start_time',
+            'name'  # Finally order by name if all else is equal
         )
 
     # display count of applied programs

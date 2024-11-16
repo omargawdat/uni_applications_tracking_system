@@ -95,6 +95,7 @@ class University(models.Model):
         PARTIALLY_CHECKED = 'partially_checked', 'Partially Checked'
         NOT_CHECKED = 'not_checked', 'Not Checked'
         WAITING_FOR_APPLICATION = 'waiting_for_application', 'Waiting for Application Time'
+        UNI_ASSIST = 'UA', 'Uni Assist Needed'
 
     status = models.CharField(
         max_length=30,
@@ -105,9 +106,11 @@ class University(models.Model):
     portal_url = models.URLField(max_length=500, null=True, blank=True)
     portal_user_name = models.CharField(max_length=100, null=True, blank=True)
     notes = models.TextField(blank=True)
+    start_time = models.DateField(null=True, blank=True)
 
     def __str__(self):
         return self.name
+
 
 class ApplicationTracking(models.Model):
     university = models.ForeignKey(

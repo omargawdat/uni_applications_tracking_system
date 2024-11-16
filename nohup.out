@@ -3350,3 +3350,545 @@ Quit the server with CONTROL-C.
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 Error: That port is already in use.
+[16/Nov/2024 13:31:34] "GET /admin/app/university/ HTTP/1.1" 200 277374
+[16/Nov/2024 13:31:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 13:35:25] "GET /admin/app/university/174/change/ HTTP/1.1" 200 42831
+[16/Nov/2024 13:35:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 13:40:35] "POST /admin/app/university/174/change/ HTTP/1.1" 302 0
+[16/Nov/2024 13:40:35] "GET /admin/app/university/ HTTP/1.1" 200 277802
+[16/Nov/2024 13:40:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 13:40:59] "GET /admin/app/university/175/change/ HTTP/1.1" 200 42880
+[16/Nov/2024 13:40:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 13:42:27] "POST /admin/app/university/175/change/ HTTP/1.1" 302 0
+[16/Nov/2024 13:42:27] "GET /admin/app/university/175/change/ HTTP/1.1" 200 43938
+[16/Nov/2024 13:42:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 13:31:25
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[16/Nov/2024 13:43:03] "GET /admin/app/university/175/change/ HTTP/1.1" 200 44760
+[16/Nov/2024 13:43:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/playground/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 13:42:39
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/playground/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 15:43:29
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[16/Nov/2024 15:43:32] "GET /admin/app/university/175/change/ HTTP/1.1" 200 44763
+[16/Nov/2024 15:43:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 15:43:33] "GET /admin/app/university/175/change/ HTTP/1.1" 200 44763
+[16/Nov/2024 15:43:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/playground/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 15:43:32
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[16/Nov/2024 15:43:44] "POST /admin/app/university/175/change/ HTTP/1.1" 302 0
+[16/Nov/2024 15:43:44] "GET /admin/app/university/ HTTP/1.1" 200 277803
+[16/Nov/2024 15:43:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 15:43:58] "GET /admin/app/university/174/change/ HTTP/1.1" 200 44428
+[16/Nov/2024 15:43:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 15:44:14] "POST /admin/app/university/174/change/ HTTP/1.1" 302 0
+[16/Nov/2024 15:44:14] "GET /admin/app/university/174/change/ HTTP/1.1" 200 44877
+[16/Nov/2024 15:44:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 15:44:36] "POST /admin/app/university/174/change/ HTTP/1.1" 302 0
+[16/Nov/2024 15:44:36] "GET /admin/app/university/174/change/ HTTP/1.1" 200 44877
+[16/Nov/2024 15:44:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 15:45:30] "GET /admin/app/university/174/change/ HTTP/1.1" 200 44437
+[16/Nov/2024 15:45:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 15:43:36
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/management/commands/runserver.py", line 126, in inner_run
+    autoreload.raise_last_exception()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/autoreload.py", line 87, in raise_last_exception
+    raise _exception[1]
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/management/__init__.py", line 394, in execute
+    autoreload.check_errors(django.setup)()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/apps/registry.py", line 124, in populate
+    app_config.ready()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/contrib/admin/apps.py", line 27, in ready
+    self.module.autodiscover()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/contrib/admin/__init__.py", line 52, in autodiscover
+    autodiscover_modules("admin", register_to=site)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/module_loading.py", line 58, in autodiscover_modules
+    import_module("%s.%s" % (app_config.name, module_to_search))
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py", line 131
+    ),
+    ^
+SyntaxError: unmatched ')'
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/management/commands/runserver.py", line 126, in inner_run
+    autoreload.raise_last_exception()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/autoreload.py", line 87, in raise_last_exception
+    raise _exception[1]
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/management/__init__.py", line 394, in execute
+    autoreload.check_errors(django.setup)()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/apps/registry.py", line 124, in populate
+    app_config.ready()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/contrib/admin/apps.py", line 27, in ready
+    self.module.autodiscover()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/contrib/admin/__init__.py", line 52, in autodiscover
+    autodiscover_modules("admin", register_to=site)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/module_loading.py", line 58, in autodiscover_modules
+    import_module("%s.%s" % (app_config.name, module_to_search))
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py", line 132
+    ),
+    ^
+SyntaxError: unmatched ')'
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/management/commands/runserver.py", line 126, in inner_run
+    autoreload.raise_last_exception()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/autoreload.py", line 87, in raise_last_exception
+    raise _exception[1]
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/management/__init__.py", line 394, in execute
+    autoreload.check_errors(django.setup)()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/apps/registry.py", line 124, in populate
+    app_config.ready()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/contrib/admin/apps.py", line 27, in ready
+    self.module.autodiscover()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/contrib/admin/__init__.py", line 52, in autodiscover
+    autodiscover_modules("admin", register_to=site)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/module_loading.py", line 58, in autodiscover_modules
+    import_module("%s.%s" % (app_config.name, module_to_search))
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py", line 134
+    ),
+    ^
+SyntaxError: unmatched ')'
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/management/commands/runserver.py", line 126, in inner_run
+    autoreload.raise_last_exception()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/autoreload.py", line 87, in raise_last_exception
+    raise _exception[1]
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/management/__init__.py", line 394, in execute
+    autoreload.check_errors(django.setup)()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/apps/registry.py", line 124, in populate
+    app_config.ready()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/contrib/admin/apps.py", line 27, in ready
+    self.module.autodiscover()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/contrib/admin/__init__.py", line 52, in autodiscover
+    autodiscover_modules("admin", register_to=site)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/module_loading.py", line 58, in autodiscover_modules
+    import_module("%s.%s" % (app_config.name, module_to_search))
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py", line 132
+    ),
+    ^
+SyntaxError: unmatched ')'
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/management/commands/runserver.py", line 126, in inner_run
+    autoreload.raise_last_exception()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/autoreload.py", line 87, in raise_last_exception
+    raise _exception[1]
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/management/__init__.py", line 394, in execute
+    autoreload.check_errors(django.setup)()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/apps/registry.py", line 124, in populate
+    app_config.ready()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/contrib/admin/apps.py", line 27, in ready
+    self.module.autodiscover()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/contrib/admin/__init__.py", line 52, in autodiscover
+    autodiscover_modules("admin", register_to=site)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/module_loading.py", line 58, in autodiscover_modules
+    import_module("%s.%s" % (app_config.name, module_to_search))
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py", line 132
+    ),
+    ^
+SyntaxError: unmatched ')'
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/management/commands/runserver.py", line 126, in inner_run
+    autoreload.raise_last_exception()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/autoreload.py", line 87, in raise_last_exception
+    raise _exception[1]
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/management/__init__.py", line 394, in execute
+    autoreload.check_errors(django.setup)()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/apps/registry.py", line 124, in populate
+    app_config.ready()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/contrib/admin/apps.py", line 27, in ready
+    self.module.autodiscover()
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/contrib/admin/__init__.py", line 52, in autodiscover
+    autodiscover_modules("admin", register_to=site)
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/module_loading.py", line 58, in autodiscover_modules
+    import_module("%s.%s" % (app_config.name, module_to_search))
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py", line 132
+    )
+    ^
+SyntaxError: unmatched ')'
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 15:47:54
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 15:48:04
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 15:48:13
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 15:48:17
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[16/Nov/2024 15:48:24] "GET /admin/app/university/174/change/ HTTP/1.1" 200 44437
+[16/Nov/2024 15:48:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 15:48:25] "GET /admin/app/university/ HTTP/1.1" 200 277394
+[16/Nov/2024 15:48:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 15:48:26] "GET /admin/app/university/ HTTP/1.1" 200 277394
+[16/Nov/2024 15:48:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 15:48:31] "GET /admin/app/university/175/change/ HTTP/1.1" 200 44782
+[16/Nov/2024 15:48:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 15:48:40] "POST /admin/app/university/175/change/ HTTP/1.1" 302 0
+[16/Nov/2024 15:48:40] "GET /admin/app/university/ HTTP/1.1" 200 277803
+[16/Nov/2024 15:48:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 15:48:42] "GET /admin/app/university/175/change/ HTTP/1.1" 200 44757
+[16/Nov/2024 15:48:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 15:48:45] "POST /admin/app/university/175/change/ HTTP/1.1" 302 0
+[16/Nov/2024 15:48:45] "GET /admin/app/university/ HTTP/1.1" 200 277803
+[16/Nov/2024 15:48:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 15:48:49] "GET /admin/app/university/174/change/ HTTP/1.1" 200 44437
+[16/Nov/2024 15:48:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 15:48:54] "POST /admin/app/university/174/change/ HTTP/1.1" 302 0
+[16/Nov/2024 15:48:54] "GET /admin/app/university/ HTTP/1.1" 200 277805
+[16/Nov/2024 15:48:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 15:49:32] "GET /admin/app/university/161/change/ HTTP/1.1" 200 44150
+[16/Nov/2024 15:49:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 15:52:35] "GET /admin/ HTTP/1.1" 200 32565
+[16/Nov/2024 15:52:37] "GET /admin/app/universityprogram/ HTTP/1.1" 200 658576
+[16/Nov/2024 15:52:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 15:52:38] "GET /admin/app/university/ HTTP/1.1" 200 277394
+[16/Nov/2024 15:52:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 15:52:42] "GET /admin/app/university/1/change/ HTTP/1.1" 200 78169
+[16/Nov/2024 15:52:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 16:02:10] "POST /admin/app/university/161/change/ HTTP/1.1" 302 0
+[16/Nov/2024 16:02:10] "GET /admin/app/university/161/change/ HTTP/1.1" 200 44982
+[16/Nov/2024 16:02:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 16:17:17] "GET /admin/app/university/161/change/ HTTP/1.1" 200 44528
+[16/Nov/2024 16:17:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 16:24:11] "POST /admin/app/university/161/change/ HTTP/1.1" 200 55290
+[16/Nov/2024 16:24:11] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 16:24:16] "POST /admin/app/university/161/change/ HTTP/1.1" 302 0
+[16/Nov/2024 16:24:16] "GET /admin/app/university/ HTTP/1.1" 200 277821
+[16/Nov/2024 16:24:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 20:32:50] "GET /admin/ HTTP/1.1" 200 32594
+Not Found: /favicon.ico
+[16/Nov/2024 20:32:51] "GET /favicon.ico HTTP/1.1" 404 2212
+[16/Nov/2024 20:32:53] "GET /admin/app/university/ HTTP/1.1" 200 277396
+[16/Nov/2024 20:32:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 20:32:55] "GET /admin/app/university/93/change/ HTTP/1.1" 200 44112
+[16/Nov/2024 20:32:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 15:48:22
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x0000000200b33840 (most recent call first):
+  <no Python frame>
+Watching for file changes with StatReloader
+[16/Nov/2024 20:46:20] "GET /admin/app/university/ HTTP/1.1" 200 277396
+[16/Nov/2024 20:46:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 20:46:21] "GET /admin/app/university/93/change/ HTTP/1.1" 200 44154
+[16/Nov/2024 20:46:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 20:46:15
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 20:46:50
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[16/Nov/2024 20:47:09] "GET /admin/app/university/93/change/ HTTP/1.1" 200 44161
+[16/Nov/2024 20:47:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 20:47:09] "GET /admin/app/university/93/change/ HTTP/1.1" 200 44161
+[16/Nov/2024 20:47:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 20:47:10] "GET /admin/app/university/93/change/ HTTP/1.1" 200 44161
+[16/Nov/2024 20:47:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 20:47:20] "POST /admin/app/university/93/change/ HTTP/1.1" 302 0
+[16/Nov/2024 20:47:20] "GET /admin/app/university/93/change/ HTTP/1.1" 200 53196
+[16/Nov/2024 20:47:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 20:49:28] "POST /admin/app/university/93/change/ HTTP/1.1" 302 0
+[16/Nov/2024 20:49:28] "GET /admin/app/university/93/change/ HTTP/1.1" 200 61861
+[16/Nov/2024 20:49:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 20:49:30] "GET /admin/app/applicationtracking/10/change/ HTTP/1.1" 200 38748
+[16/Nov/2024 20:49:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 20:49:34] "POST /admin/app/applicationtracking/10/change/ HTTP/1.1" 302 0
+[16/Nov/2024 20:49:34] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 75073
+[16/Nov/2024 20:49:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 20:49:36] "GET /admin/app/university/93/change/ HTTP/1.1" 200 61487
+[16/Nov/2024 20:49:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 20:49:51] "POST /admin/app/university/93/change/ HTTP/1.1" 200 61977
+[16/Nov/2024 20:49:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 20:49:54] "POST /admin/app/university/93/change/ HTTP/1.1" 302 0
+[16/Nov/2024 20:49:54] "GET /admin/app/university/ HTTP/1.1" 200 277813
+[16/Nov/2024 20:49:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 20:50:00] "GET /admin/app/university/94/change/ HTTP/1.1" 200 44293
+[16/Nov/2024 20:50:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 20:47:09
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Error: That port is already in use.
+[16/Nov/2024 20:52:15] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 74323
+[16/Nov/2024 20:52:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 20:52:18] "GET /admin/app/university/ HTTP/1.1" 200 277678
+[16/Nov/2024 20:52:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 20:52:25] "GET /admin/app/university/161/change/ HTTP/1.1" 200 53299
+[16/Nov/2024 20:52:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 20:52:26] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 74323
+[16/Nov/2024 20:52:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 20:52:33] "GET /admin/app/applicationtracking/11/change/ HTTP/1.1" 200 38767
+[16/Nov/2024 20:52:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 20:52:36] "GET /admin/app/university/93/change/?_to_field=id HTTP/1.1" 200 61555
+[16/Nov/2024 20:52:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 20:52:42] "POST /admin/app/university/93/change/?_to_field=id HTTP/1.1" 302 0
+[16/Nov/2024 20:52:42] "GET /admin/app/university/ HTTP/1.1" 200 278097
+[16/Nov/2024 20:52:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 20:54:59] "GET /admin/ HTTP/1.1" 200 32641
+[16/Nov/2024 20:55:01] "GET /admin/app/university/ HTTP/1.1" 200 277682
+[16/Nov/2024 20:55:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 20:55:05] "GET /admin/app/university/94/change/ HTTP/1.1" 200 44293
+[16/Nov/2024 20:55:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 20:57:50] "POST /admin/app/university/94/change/ HTTP/1.1" 302 0
+[16/Nov/2024 20:57:50] "GET /admin/app/university/ HTTP/1.1" 200 278136
+[16/Nov/2024 20:57:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 20:51:58
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x0000000200b33840 (most recent call first):
+  <no Python frame>
