@@ -74,7 +74,6 @@ class UniversityProgram(models.Model):
         help_text="Required GPA score (0-4 scale)"
     )
 
-
     def __str__(self):
         return f"{self.name} at {self.university}"
 
@@ -90,19 +89,23 @@ class ApplicationStatus(models.TextChoices):
 
 
 class University(models.Model):
+    class Status(models.TextChoices):
+        FULLY_CHECKED = 'fully_checked', 'Fully Checked'
+        PARTIALLY_CHECKED = 'partially_checked', 'Partially Checked'
+        NOT_CHECKED = 'not_checked', 'Not Checked'
+
+    status = models.CharField(
+        max_length=20,
+        choices=Status.choices,
+        default=Status.NOT_CHECKED
+    )
     name = models.CharField(max_length=255)
     portal_url = models.URLField(max_length=500, null=True, blank=True)
     notes = models.TextField(blank=True)
 
-    def __str__(self):
-        return self.name
-
-    class Meta:
-        verbose_name_plural = "Universities"
-
 
 class ApplicationTracking(models.Model):
-    university= models.ForeignKey(
+    university = models.ForeignKey(
         University,
         on_delete=models.CASCADE,
         related_name='applications',

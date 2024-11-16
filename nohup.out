@@ -2889,3 +2889,144 @@ Watching for file changes with StatReloader
 [16/Nov/2024 09:30:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 [16/Nov/2024 09:30:59] "GET /admin/app/university/ HTTP/1.1" 200 310399
 [16/Nov/2024 09:30:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 09:43:30] "GET /admin/app/university/ HTTP/1.1" 200 310399
+[16/Nov/2024 09:43:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 09:24:40
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x0000000200b33840 (most recent call first):
+  <no Python frame>
+Watching for file changes with StatReloader
+[16/Nov/2024 10:10:38] "GET /admin/app/university/ HTTP/1.1" 200 272348
+[16/Nov/2024 10:10:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 10:10:38] "GET /admin/app/university/ HTTP/1.1" 200 272348
+[16/Nov/2024 10:10:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 10:39:25] "GET /admin/app/university/ HTTP/1.1" 200 272348
+[16/Nov/2024 10:39:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 10:39:39] "GET /admin/app/university/173/change/ HTTP/1.1" 200 37771
+[16/Nov/2024 10:39:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 10:45:52] "GET /admin/app/university/ HTTP/1.1" 200 272348
+[16/Nov/2024 10:45:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 10:10:36
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 10:52:48
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 10:53:38
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 10:53:57
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 10:54:12
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[16/Nov/2024 10:54:17] "GET /admin/app/university/ HTTP/1.1" 200 315470
+[16/Nov/2024 10:54:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Watching for file changes with StatReloader
+Error: That port is already in use.
+[16/Nov/2024 10:54:23] "GET /admin/app/university/ HTTP/1.1" 200 315470
+[16/Nov/2024 10:54:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 10:54:24] "GET /admin/app/university/ HTTP/1.1" 200 315470
+[16/Nov/2024 10:54:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 10:54:16
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 10:54:41
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[16/Nov/2024 10:54:50] "GET /admin/app/university/ HTTP/1.1" 200 315470
+[16/Nov/2024 10:54:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 10:54:52] "GET /admin/app/university/1/change/ HTTP/1.1" 200 68492
+[16/Nov/2024 10:54:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 10:54:57] "POST /admin/app/university/1/change/ HTTP/1.1" 302 0
+[16/Nov/2024 10:54:57] "GET /admin/app/university/ HTTP/1.1" 200 315880
+[16/Nov/2024 10:54:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 10:54:46
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[16/Nov/2024 10:55:04] "GET /admin/app/university/ HTTP/1.1" 200 315472
+[16/Nov/2024 10:55:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 10:55:04] "GET /admin/app/university/ HTTP/1.1" 200 315472
+[16/Nov/2024 10:55:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 10:55:05] "GET /admin/app/university/ HTTP/1.1" 200 315472
+[16/Nov/2024 10:55:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 10:55:05] "GET /admin/app/university/ HTTP/1.1" 200 315472
+[16/Nov/2024 10:55:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 10:55:04
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
