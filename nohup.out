@@ -3119,3 +3119,30 @@ Watching for file changes with StatReloader
 [16/Nov/2024 11:03:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 [16/Nov/2024 11:03:10] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 55697
 [16/Nov/2024 11:03:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:03:32] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 55697
+[16/Nov/2024 11:03:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:03:33] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 55697
+[16/Nov/2024 11:03:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:03:33] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 55697
+[16/Nov/2024 11:03:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:03:33] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 55697
+[16/Nov/2024 11:03:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:03:34] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 55697
+[16/Nov/2024 11:03:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:03:34] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 55697
+[16/Nov/2024 11:03:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:03:34] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 55697
+[16/Nov/2024 11:03:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:03:56] "GET /admin/app/applicationtracking/4/change/ HTTP/1.1" 200 37904
+[16/Nov/2024 11:03:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 11:03:57] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 55697
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 11:03:06
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader

@@ -104,6 +104,8 @@ class University(models.Model):
     portal_url = models.URLField(max_length=500, null=True, blank=True)
     notes = models.TextField(blank=True)
 
+    def __str__(self):
+        return self.name
 
 class ApplicationTracking(models.Model):
     university = models.ForeignKey(
