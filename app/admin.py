@@ -1,9 +1,9 @@
 from django.contrib import admin
+from django.db.models import Case, When, Value
 from django.utils.html import format_html
 from unfold.admin import ModelAdmin, StackedInline
 
-from .models import ApplicationTracking
-from .models import Document
+from .models import ApplicationTracking, ApplicationStatus
 from .models import UniversityProgram
 
 
@@ -15,15 +15,19 @@ class UniversityProgramAdmin(ModelAdmin):
 
     # Display the most important fields in the list view of the admin panel
     list_display = (
-        'name', 'university','status'
+        'university', 'name', 'status'
     )
 
     # Filters for the list view
     list_filter = ('degree', 'status')
 
     # Searchable fields
-    search_fields = ('name', 'university', 'description', 'personal_note')
+    search_fields = ('university',)
 
+    ordering = ('university',)
+
+    # display 10 records per page
+    list_per_page = 200
 
     # Fieldsets to group fields in the form view
     fieldsets = (
@@ -64,19 +68,20 @@ class ApplicationTrackingAdmin(ModelAdmin):
     list_fullwidth = True
     list_horizontal_scrollbar_top = True
     compressed_fields = True
-
     list_display = ('university', 'field', 'notes', 'application_submission_date', 'status', )
 
     list_filter = ('status', 'field')
 
     search_fields = ('university', 'notes')
 
+    def get_ordering(self, request):
+        return (
+            Case(
+                When(status=ApplicationStatus.ACCEPTED, then=Value(1)),
+                When(status=ApplicationStatus.IN_PROGRESS, then=Value(2)),
+                When(status=ApplicationStatus.NOT_STARTED, then=Value(3)),
+                When(status=ApplicationStatus.REJECTED, then=Value(4)),
+                default=Value(5),
+            ),
+        )
 
-
-@admin.register(Document)
-class DocumentAdmin(ModelAdmin):
-    list_display = ('name', 'is_available')
-    search_fields = ('name',)
-    list_filter = ('is_available',)
-    ordering = ('-is_available', 'name',)
-    list_editable = ('is_available',)

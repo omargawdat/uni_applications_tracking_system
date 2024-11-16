@@ -148,19 +148,7 @@ UNFOLD = {
                     }
 
                 ],
-            },
-            {
-                # "title": _("Documents"),
-                "separator": True,
-                "items": [
-                    {
-                        "title": _("All Documents"),
-                        "icon": "folder",
-                        "link": reverse_lazy("admin:app_document_changelist"),
-                        "permission": lambda request: request.user.has_perm("app.view_document"),
-                    }
-                ],
-            },
+            }
         ],
     },
 }

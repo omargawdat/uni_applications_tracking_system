@@ -89,15 +89,14 @@ class ApplicationStatus(models.TextChoices):
     REJECTED = 'RE', 'Rejected'
 
 
-class Document(models.Model):
-    name = models.CharField(max_length=255)
-    is_available = models.BooleanField(default=False)
-
-    def __str__(self):
-        return self.name
 
 
 class ApplicationTracking(models.Model):
+    status = models.CharField(
+        max_length=2,
+        choices=ApplicationStatus.choices,
+        default=ApplicationStatus.NOT_STARTED,
+    )
     university = models.CharField(max_length=255, default="")
     field = models.CharField(
         max_length=30,
@@ -106,15 +105,11 @@ class ApplicationTracking(models.Model):
             ('CS', 'Computer Science'),
             ('CYB', 'Cyber Security'),
             ('DS', 'Data Science'),
-            ('AUTO', "Autonomy")
+            ('AUTO', "Autonomy"),
+            ('Medical Imaging', 'Medical Imaging'),
         ],
         null=True,
         help_text="Main field of study"
-    )
-    status = models.CharField(
-        max_length=2,
-        choices=ApplicationStatus.choices,
-        default=ApplicationStatus.NOT_STARTED,
     )
     url = models.URLField(max_length=500, null=True, blank=True)
     application_submission_date = models.DateField(null=True, blank=True)
