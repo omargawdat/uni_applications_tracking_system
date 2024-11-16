@@ -91,7 +91,7 @@ class ApplicationStatus(models.TextChoices):
 
 class University(models.Model):
     name = models.CharField(max_length=255)
-    url = models.URLField(max_length=500, null=True, blank=True)
+    portal_url = models.URLField(max_length=500, null=True, blank=True)
     notes = models.TextField(blank=True)
 
     def __str__(self):
