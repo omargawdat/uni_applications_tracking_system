@@ -117,8 +117,8 @@ class UniversityAdmin(ModelAdmin):
     def get_ordering(self, request):
         return (
             Case(
-                When(status=University.Status.WAITING_FOR_APPLICATION, then=Value(0)),
-                When(status=University.Status.NOT_CHECKED, then=Value(1)),
+                When(status=University.Status.NOT_CHECKED, then=Value(0)),
+                When(status=University.Status.WAITING_FOR_APPLICATION, then=Value(1)),
                 When(status=University.Status.PARTIALLY_CHECKED, then=Value(2)),
                 When(status=University.Status.FULLY_CHECKED, then=Value(3)),
                 default=Value(4),

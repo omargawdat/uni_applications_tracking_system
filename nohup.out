@@ -3294,3 +3294,59 @@ OSError: [Errno 9] Bad file descriptor
 
 Current thread 0x0000000200b33840 (most recent call first):
   <no Python frame>
+Watching for file changes with StatReloader
+[16/Nov/2024 13:17:33] "GET /admin/app/university/175/change/ HTTP/1.1" 200 42823
+[16/Nov/2024 13:17:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 13:20:53] "POST /admin/app/university/175/change/ HTTP/1.1" 302 0
+[16/Nov/2024 13:20:53] "GET /admin/app/university/ HTTP/1.1" 200 277783
+[16/Nov/2024 13:20:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 13:20:58] "GET /admin/app/university/176/change/ HTTP/1.1" 200 60457
+[16/Nov/2024 13:20:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 13:21:28] "GET /admin/app/university/ HTTP/1.1" 200 277374
+[16/Nov/2024 13:21:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 13:21:31] "GET /admin/app/university/1/change/ HTTP/1.1" 200 76907
+[16/Nov/2024 13:21:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 13:21:35] "POST /admin/app/university/1/change/ HTTP/1.1" 302 0
+[16/Nov/2024 13:21:35] "GET /admin/app/university/ HTTP/1.1" 200 277764
+[16/Nov/2024 13:21:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 13:21:38] "GET /admin/app/university/176/change/ HTTP/1.1" 200 60457
+[16/Nov/2024 13:21:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 13:22:49] "POST /admin/app/university/176/change/ HTTP/1.1" 302 0
+[16/Nov/2024 13:22:49] "GET /admin/app/university/ HTTP/1.1" 200 277786
+[16/Nov/2024 13:22:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 13:22:57] "GET /admin/app/university/176/change/ HTTP/1.1" 200 60472
+[16/Nov/2024 13:22:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 13:22:59] "GET /admin/app/university/ HTTP/1.1" 200 277374
+[16/Nov/2024 13:23:01] "GET /admin/app/university/1/change/ HTTP/1.1" 200 76906
+[16/Nov/2024 13:23:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 13:30:14] "GET /admin/app/university/ HTTP/1.1" 200 277374
+[16/Nov/2024 13:30:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 13:30:16] "GET /admin/app/university/175/change/ HTTP/1.1" 200 42859
+[16/Nov/2024 13:30:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 13:30:59] "POST /admin/app/university/175/change/ HTTP/1.1" 302 0
+[16/Nov/2024 13:30:59] "GET /admin/app/university/ HTTP/1.1" 200 277783
+[16/Nov/2024 13:30:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[16/Nov/2024 13:31:03] "GET /admin/app/university/ HTTP/1.1" 200 277374
+[16/Nov/2024 13:31:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 13:17:32
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 16, 2024 - 13:31:18
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Error: That port is already in use.
