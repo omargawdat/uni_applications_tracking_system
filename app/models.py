@@ -87,6 +87,7 @@ class ApplicationStatus(models.TextChoices):
     REQUIREMENTS_BARELY_MET = 'RM', 'Requirements Barely Met'
     ACCEPTED = 'AC', 'Accepted'
     REJECTED = 'RE', 'Rejected'
+    STATUS_CHANGE = 'SC', 'Status Change'
 
 
 class University(models.Model):
@@ -130,10 +131,13 @@ class ApplicationTracking(models.Model):
         choices=[
             ('AI', 'Artificial Intelligence'),
             ('CS', 'Computer Science'),
+            ('IS', 'Information Systems'),
             ('CYB', 'Cyber Security'),
             ('DS', 'Data Science'),
             ('AUTO', "Autonomy"),
             ('Medical Imaging', 'Medical Imaging'),
+            ('bioinformatics', 'Bioinformatics'),
+            ('mathematics', 'Mathematics'),
         ],
         null=True,
         help_text="Main field of study"
