@@ -138,6 +138,7 @@ class ApplicationTracking(models.Model):
             ('Medical Imaging', 'Medical Imaging'),
             ('bioinformatics', 'Bioinformatics'),
             ('mathematics', 'Mathematics'),
+            ('EMBEDDED', 'Embedded Systems'),
         ],
         null=True,
         help_text="Main field of study"
