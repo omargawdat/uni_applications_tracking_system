@@ -83,11 +83,9 @@ class UniversityProgram(models.Model):
 
 class ApplicationStatus(models.TextChoices):
     NOT_STARTED = 'NS', 'Not Started'
+    WAITING_FOR_OPENING = 'WO', 'Waiting for Opening'
     IN_PROGRESS = 'IP', 'In Progress'
-    REQUIREMENTS_BARELY_MET = 'RM', 'Requirements Barely Met'
     ACCEPTED = 'AC', 'Accepted'
-    REJECTED = 'RE', 'Rejected'
-    STATUS_CHANGE = 'SC', 'Status Change'
 
 
 class University(models.Model):
@@ -139,10 +137,23 @@ class ApplicationTracking(models.Model):
             ('bioinformatics', 'Bioinformatics'),
             ('mathematics', 'Mathematics'),
             ('EMBEDDED', 'Embedded Systems'),
+            ('Cognitive', 'Cognitive Science'),
+            ('computational', 'Computational Linguistics'),
         ],
         null=True,
         help_text="Main field of study"
     )
-    application_submission_date = models.DateField(null=True, blank=True)
-    notes = models.TextField(blank=True)
+    start_date = models.DateField(null=True, blank=True)
+    end_date = models.DateField(null=True, blank=True)
     program_url = models.URLField(max_length=500, null=True, blank=True)
+    application_portal = models.CharField(
+        max_length=20,
+        choices=[
+            ('NOT_PICKED', 'Not Picked'),
+            ('PORTAL', 'Portal'),
+            ('UNI_ASSIST', 'Uni-Assist'),
+            ('OTHER', 'Other'),
+        ],
+        default='NOT_PICKED'
+    )
+    notes = models.TextField(blank=True)

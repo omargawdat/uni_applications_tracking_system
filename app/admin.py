@@ -69,27 +69,33 @@ class ApplicationTrackingAdmin(ModelAdmin):
     list_fullwidth = True
     list_horizontal_scrollbar_top = True
     compressed_fields = True
-    list_display = ('university', 'field', 'notes', 'application_submission_date', 'status',)
-
-    list_filter = ('status', 'field')
+    list_display = ('university', 'field', 'status', "application_portal")
+    list_editable = ('status', 'application_portal')
+    list_filter = ('status', 'field', 'application_portal')
 
     def get_ordering(self, request):
         return (
             Case(
-                When(status=ApplicationStatus.ACCEPTED, then=Value(1)),
-                When(status=ApplicationStatus.IN_PROGRESS, then=Value(2)),
-                When(status=ApplicationStatus.NOT_STARTED, then=Value(3)),
-                When(status=ApplicationStatus.REJECTED, then=Value(4)),
-                default=Value(5),
+                When(application_portal="NOT_PICKED", then=Value(1)),
+                When(status=ApplicationStatus.NOT_STARTED, then=Value(2)),
+                When(status=ApplicationStatus.IN_PROGRESS, then=Value(3)),
+                When(status=ApplicationStatus.NOT_STARTED, then=Value(4)),
+                When(status=ApplicationStatus.ACCEPTED, then=Value(5)),
+
+                default=Value(10),
             ),
         )
+
+    def get_readonly_fields(self, request, obj=...):
+        if obj.status == ApplicationStatus.IN_PROGRESS:
+            return ['status', 'application_portal']
 
 
 class ApplicationTrackingInline(TabularInline):
     model = ApplicationTracking
     extra = 0
     classes = ['collapse']
-    # exclude = ["notes", ]
+    exclude = ["program_url", ]
     can_delete = False
     show_change_link = True
 
@@ -99,14 +105,9 @@ class ApplicationTrackingInline(TabularInline):
                 When(status=ApplicationStatus.ACCEPTED, then=Value(1)),
                 When(status=ApplicationStatus.IN_PROGRESS, then=Value(2)),
                 When(status=ApplicationStatus.NOT_STARTED, then=Value(3)),
-                When(status=ApplicationStatus.REQUIREMENTS_BARELY_MET, then=Value(4)),
-                When(status=ApplicationStatus.REJECTED, then=Value(5)),
                 default=Value(5),
             ),
         )
-
-    def has_change_permission(self, request, obj=None):
-        return False
 
 
 @admin.register(University)
@@ -114,6 +115,7 @@ class UniversityAdmin(ModelAdmin):
     list_filter = ('status',)
     list_display = ('name', 'status', 'display_applied_programs',)
     inlines = [ApplicationTrackingInline]
+    show_facets = admin.ShowFacets.ALWAYS
 
     def get_ordering(self, request):
         return (
