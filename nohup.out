@@ -1,2 +1,2023 @@
 Watching for file changes with StatReloader
 Error: That port is already in use.
+Watching for file changes with StatReloader
+[26/Nov/2024 23:41:23] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 251006
+[26/Nov/2024 23:41:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[26/Nov/2024 23:41:23] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 251006
+[26/Nov/2024 23:41:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[26/Nov/2024 23:41:24] "GET /admin/app/applicationtracking/70/change/ HTTP/1.1" 200 42004
+[26/Nov/2024 23:41:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[26/Nov/2024 23:41:25] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 251006
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 26, 2024 - 23:41:22
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[26/Nov/2024 23:41:30] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 251006
+[26/Nov/2024 23:41:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Internal Server Error: /admin/app/applicationtracking/70/change/
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/contrib/admin/sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 1964, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/unfold/admin.py", line 449, in changeform_view
+    return super().changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 1854, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/unfold/admin.py", line 268, in get_fieldsets
+    return super().get_fieldsets(request, obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 406, in get_fieldsets
+    return [(None, {"fields": self.get_fields(request, obj)})]
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 397, in get_fields
+    form = self._get_form_for_get_fields(request, obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 788, in _get_form_for_get_fields
+    return self.get_form(request, obj, fields=None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 802, in get_form
+    exclude.extend(readonly_fields)
+TypeError: 'NoneType' object is not iterable
+[26/Nov/2024 23:41:32] "GET /admin/app/applicationtracking/70/change/ HTTP/1.1" 500 145138
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 26, 2024 - 23:41:29
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[26/Nov/2024 23:41:36] "GET /admin/app/applicationtracking/70/change/ HTTP/1.1" 200 42004
+[26/Nov/2024 23:41:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[26/Nov/2024 23:41:36] "GET /admin/app/applicationtracking/70/change/ HTTP/1.1" 200 42004
+[26/Nov/2024 23:41:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[26/Nov/2024 23:41:36] "GET /admin/app/applicationtracking/70/change/ HTTP/1.1" 200 42004
+[26/Nov/2024 23:41:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[26/Nov/2024 23:41:43] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 251006
+[26/Nov/2024 23:41:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[26/Nov/2024 23:41:45] "GET /admin/app/applicationtracking/70/change/ HTTP/1.1" 200 42004
+[26/Nov/2024 23:41:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[26/Nov/2024 23:41:48] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 251006
+[26/Nov/2024 23:41:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[26/Nov/2024 23:50:49] "GET /admin/app/applicationtracking/70/change/ HTTP/1.1" 200 42004
+[26/Nov/2024 23:50:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[26/Nov/2024 23:50:49] "GET /static/unfold/js/alpine.sort.js HTTP/1.1" 304 0
+[26/Nov/2024 23:50:50] "GET /admin/app/applicationtracking/69/change/ HTTP/1.1" 200 41972
+[26/Nov/2024 23:50:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[26/Nov/2024 23:50:50] "GET /admin/app/applicationtracking/68/change/ HTTP/1.1" 200 41979
+[26/Nov/2024 23:50:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[26/Nov/2024 23:51:16] "POST /admin/app/applicationtracking/70/change/ HTTP/1.1" 302 0
+[26/Nov/2024 23:51:16] "GET /admin/app/applicationtracking/70/change/ HTTP/1.1" 200 42509
+[26/Nov/2024 23:51:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[26/Nov/2024 23:51:49] "POST /admin/app/applicationtracking/68/change/ HTTP/1.1" 302 0
+[26/Nov/2024 23:51:49] "GET /admin/app/applicationtracking/68/change/ HTTP/1.1" 200 42484
+[26/Nov/2024 23:51:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[26/Nov/2024 23:51:49] "POST /admin/app/applicationtracking/70/change/ HTTP/1.1" 302 0
+[26/Nov/2024 23:51:49] "GET /admin/app/applicationtracking/70/change/ HTTP/1.1" 200 42509
+[26/Nov/2024 23:51:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[26/Nov/2024 23:51:50] "POST /admin/app/applicationtracking/69/change/ HTTP/1.1" 302 0
+[26/Nov/2024 23:51:50] "GET /admin/app/applicationtracking/69/change/ HTTP/1.1" 200 42477
+[26/Nov/2024 23:51:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[26/Nov/2024 23:56:41] "GET /admin/app/applicationtracking/68/change/ HTTP/1.1" 200 42017
+[26/Nov/2024 23:56:41] "GET /admin/app/applicationtracking/69/change/ HTTP/1.1" 200 42010
+[26/Nov/2024 23:56:42] "GET /admin/app/applicationtracking/70/change/ HTTP/1.1" 200 42042
+[26/Nov/2024 23:56:53] "POST /admin/app/applicationtracking/70/change/ HTTP/1.1" 302 0
+[26/Nov/2024 23:56:53] "GET /admin/app/applicationtracking/70/change/ HTTP/1.1" 200 42471
+[26/Nov/2024 23:56:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[26/Nov/2024 23:56:54] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 251006
+[26/Nov/2024 23:56:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[26/Nov/2024 23:57:31] "POST /admin/app/applicationtracking/ HTTP/1.1" 302 0
+[26/Nov/2024 23:57:31] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 251350
+[26/Nov/2024 23:57:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 00:03:18] "GET /admin/app/applicationtracking/70/change/ HTTP/1.1" 200 42004
+[27/Nov/2024 00:03:18] "GET /static/unfold/js/alpine.sort.js HTTP/1.1" 304 0
+[27/Nov/2024 00:03:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 00:03:22] "GET /admin/app/university/152/change/?_to_field=id HTTP/1.1" 200 95787
+[27/Nov/2024 00:03:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 00:03:27] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 251006
+[27/Nov/2024 00:03:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 00:05:36] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 251006
+[27/Nov/2024 00:05:36] "GET /static/unfold/js/alpine.sort.js HTTP/1.1" 304 0
+[27/Nov/2024 00:05:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 00:05:38] "GET /admin/app/applicationtracking/70/change/ HTTP/1.1" 200 42004
+[27/Nov/2024 00:05:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 00:05:44] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 251006
+[27/Nov/2024 00:05:51] "GET /admin/app/applicationtracking/62/change/ HTTP/1.1" 200 41836
+[27/Nov/2024 00:05:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 00:05:53] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 251006
+[27/Nov/2024 00:05:54] "GET /admin/app/applicationtracking/62/change/ HTTP/1.1" 200 41836
+[27/Nov/2024 00:05:58] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 251006
+[27/Nov/2024 00:06:01] "GET /admin/app/applicationtracking/62/change/ HTTP/1.1" 200 41836
+[27/Nov/2024 00:06:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 00:06:12] "GET /admin/app/university/128/change/?_to_field=id HTTP/1.1" 200 64532
+[27/Nov/2024 00:06:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 00:06:22] "GET /admin/app/applicationtracking/62/change/ HTTP/1.1" 200 41836
+[27/Nov/2024 00:06:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 00:07:27] "GET /admin/app/university/128/change/?_to_field=id HTTP/1.1" 200 64532
+[27/Nov/2024 00:07:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 00:08:17] "GET /admin/app/applicationtracking/62/delete/ HTTP/1.1" 200 19184
+[27/Nov/2024 00:08:18] "POST /admin/app/applicationtracking/62/delete/ HTTP/1.1" 302 0
+[27/Nov/2024 00:08:18] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 246505
+[27/Nov/2024 00:08:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 00:08:20] "GET /admin/app/applicationtracking/61/change/ HTTP/1.1" 200 41887
+[27/Nov/2024 00:08:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 00:08:23] "GET /admin/app/university/125/change/?_to_field=id HTTP/1.1" 200 64521
+[27/Nov/2024 00:08:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 00:08:43] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 246123
+[27/Nov/2024 00:08:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 00:10:42] "GET /admin/app/applicationtracking/61/change/ HTTP/1.1" 200 41887
+[27/Nov/2024 00:10:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 00:10:44] "GET /admin/app/university/125/change/?_to_field=id HTTP/1.1" 200 64521
+[27/Nov/2024 00:10:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 00:12:19] "GET /admin/app/applicationtracking/61/change/ HTTP/1.1" 200 41887
+[27/Nov/2024 00:12:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 00:12:21] "GET /admin/app/applicationtracking/61/delete/ HTTP/1.1" 200 19184
+[27/Nov/2024 00:12:22] "POST /admin/app/applicationtracking/61/delete/ HTTP/1.1" 302 0
+[27/Nov/2024 00:12:22] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 241650
+[27/Nov/2024 00:12:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 00:12:29] "GET /admin/app/applicationtracking/60/change/ HTTP/1.1" 200 41775
+[27/Nov/2024 00:12:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 00:13:09] "GET /admin/app/university/165/change/?_to_field=id HTTP/1.1" 200 64508
+[27/Nov/2024 00:13:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 00:20:46] "GET /admin/app/university/165/change/?_to_field=id HTTP/1.1" 200 64508
+[27/Nov/2024 00:20:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 00:20:46] "GET /static/unfold/js/alpine.sort.js HTTP/1.1" 304 0
+[27/Nov/2024 00:32:30] "GET /admin/app/applicationtracking/60/delete/ HTTP/1.1" 200 19184
+[27/Nov/2024 00:32:30] "GET /static/unfold/js/alpine.sort.js HTTP/1.1" 304 0
+[27/Nov/2024 00:32:32] "POST /admin/app/applicationtracking/60/delete/ HTTP/1.1" 302 0
+[27/Nov/2024 00:32:32] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 236774
+[27/Nov/2024 00:32:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 00:32:35] "GET /admin/app/university/165/change/?_to_field=id HTTP/1.1" 200 48952
+[27/Nov/2024 00:32:37] "GET /admin/app/university/165/change/?_to_field=id HTTP/1.1" 200 48952
+[27/Nov/2024 00:32:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 08:10:37] "GET /admin/ HTTP/1.1" 200 32735
+[27/Nov/2024 08:10:37] "GET /static/unfold/js/alpine.sort.js HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[27/Nov/2024 08:10:37] "GET /favicon.ico HTTP/1.1" 404 2212
+[27/Nov/2024 08:10:39] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 236392
+[27/Nov/2024 08:10:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 08:10:43] "GET /admin/app/applicationtracking/58/change/ HTTP/1.1" 200 41948
+[27/Nov/2024 08:10:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 08:12:27] "GET /admin/app/university/163/change/?_to_field=id HTTP/1.1" 200 80491
+[27/Nov/2024 08:12:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 08:15:22] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 236392
+[27/Nov/2024 08:15:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 08:15:26] "GET /admin/app/applicationtracking/58/change/ HTTP/1.1" 200 41948
+[27/Nov/2024 08:15:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 08:41:55] "POST /admin/app/applicationtracking/58/change/ HTTP/1.1" 302 0
+[27/Nov/2024 08:41:55] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 236830
+[27/Nov/2024 08:41:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 08:48:20] "GET /admin/app/applicationtracking/57/change/ HTTP/1.1" 200 42362
+[27/Nov/2024 08:48:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 08:48:22] "GET /admin/app/university/163/change/?_to_field=id HTTP/1.1" 200 80437
+[27/Nov/2024 08:48:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 08:55:06] "POST /admin/app/applicationtracking/57/change/ HTTP/1.1" 302 0
+[27/Nov/2024 08:55:06] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 236830
+[27/Nov/2024 08:55:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 08:55:20] "GET /admin/app/applicationtracking/53/change/ HTTP/1.1" 200 41834
+[27/Nov/2024 08:55:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 08:55:26] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 236392
+[27/Nov/2024 08:55:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 08:55:29] "GET /admin/app/applicationtracking/53/change/ HTTP/1.1" 200 41834
+[27/Nov/2024 08:55:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 08:57:45] "GET /admin/app/university/141/change/?_to_field=id HTTP/1.1" 200 64621
+[27/Nov/2024 08:57:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 09:02:12] "POST /admin/app/applicationtracking/53/change/ HTTP/1.1" 302 0
+[27/Nov/2024 09:02:12] "GET /admin/app/applicationtracking/53/change/ HTTP/1.1" 200 42327
+[27/Nov/2024 09:02:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 09:02:20] "POST /admin/app/applicationtracking/53/change/ HTTP/1.1" 302 0
+[27/Nov/2024 09:02:20] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 236830
+[27/Nov/2024 09:02:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 09:02:30] "GET /admin/app/applicationtracking/52/change/ HTTP/1.1" 200 42145
+[27/Nov/2024 09:02:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 09:02:53] "GET /admin/app/university/96/change/?_to_field=id HTTP/1.1" 200 64587
+[27/Nov/2024 09:02:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 09:07:57] "GET /admin/app/university/96/change/?_to_field=id HTTP/1.1" 200 64587
+[27/Nov/2024 09:07:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 09:13:17] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 236392
+[27/Nov/2024 09:13:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 09:13:17] "GET /static/unfold/js/alpine.sort.js HTTP/1.1" 304 0
+[27/Nov/2024 09:13:27] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 131879
+[27/Nov/2024 09:13:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 09:33:23] "GET /admin/app/university/96/change/?_to_field=id HTTP/1.1" 200 64587
+[27/Nov/2024 09:34:08] "POST /admin/app/university/96/change/?_to_field=id HTTP/1.1" 302 0
+[27/Nov/2024 09:34:08] "GET /admin/app/university/ HTTP/1.1" 200 266920
+[27/Nov/2024 09:34:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 09:34:14] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 126957
+[27/Nov/2024 09:34:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 09:34:15] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 126957
+[27/Nov/2024 09:34:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 09:34:16] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 126957
+[27/Nov/2024 09:34:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 09:34:52] "GET /admin/app/applicationtracking/51/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 41968
+[27/Nov/2024 09:34:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 09:35:09] "GET /admin/app/university/143/change/?_to_field=id HTTP/1.1" 200 64592
+[27/Nov/2024 09:35:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 09:36:31] "GET /admin/app/applicationtracking/51/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 41968
+[27/Nov/2024 09:43:24] "POST /admin/app/applicationtracking/51/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 302 0
+[27/Nov/2024 09:43:24] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 122425
+[27/Nov/2024 09:43:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 10:33:58] "GET /admin/ HTTP/1.1" 200 32711
+[27/Nov/2024 10:33:58] "GET /static/unfold/js/alpine.sort.js HTTP/1.1" 304 0
+[27/Nov/2024 10:34:01] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 121987
+[27/Nov/2024 10:34:01] "GET /static/unfold/js/alpine.sort.js HTTP/1.1" 304 0
+[27/Nov/2024 10:34:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 10:34:01] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 121987
+[27/Nov/2024 10:34:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 10:34:18] "GET /admin/app/applicationtracking/50/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42179
+[27/Nov/2024 10:34:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 10:35:16] "GET /admin/app/applicationtracking/50/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42179
+[27/Nov/2024 10:36:44] "GET /admin/app/university/124/change/?_to_field=id HTTP/1.1" 200 64608
+[27/Nov/2024 10:36:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 10:42:27] "POST /admin/app/applicationtracking/50/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 302 0
+[27/Nov/2024 10:42:27] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 122425
+[27/Nov/2024 10:42:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 10:42:34] "POST /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 302 0
+[27/Nov/2024 10:42:34] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 117399
+[27/Nov/2024 10:42:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 10:42:38] "GET /admin/app/applicationtracking/48/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42061
+[27/Nov/2024 10:42:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 10:42:47] "GET /admin/app/university/147/change/?_to_field=id HTTP/1.1" 200 64554
+[27/Nov/2024 10:42:47] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 10:44:30] "GET /admin/app/university/147/change/?_to_field=id HTTP/1.1" 200 64554
+[27/Nov/2024 10:44:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 10:49:04] "GET /admin/app/university/147/change/?_to_field=id HTTP/1.1" 200 64554
+[27/Nov/2024 10:49:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 10:50:12] "POST /admin/app/applicationtracking/48/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 302 0
+[27/Nov/2024 10:50:12] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 112536
+[27/Nov/2024 10:50:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 10:51:39] "GET /admin/app/applicationtracking/46/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42192
+[27/Nov/2024 10:51:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 10:51:41] "GET /admin/app/university/109/change/?_to_field=id HTTP/1.1" 200 80373
+[27/Nov/2024 10:51:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 10:54:44] "GET /admin/app/applicationtracking/45/change/ HTTP/1.1" 200 41479
+[27/Nov/2024 10:54:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 10:54:45] "GET /admin/app/applicationtracking/46/change/ HTTP/1.1" 200 41946
+[27/Nov/2024 10:54:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 10:57:18] "GET /admin/app/university/109/change/?_to_field=id HTTP/1.1" 200 80373
+[27/Nov/2024 10:57:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:08:35] "GET /admin/ HTTP/1.1" 200 32823
+[27/Nov/2024 11:08:41] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 112098
+[27/Nov/2024 11:08:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:08:42] "GET /admin/app/applicationtracking/46/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42192
+[27/Nov/2024 11:08:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:08:46] "GET /admin/app/university/109/change/?_to_field=id HTTP/1.1" 200 80373
+[27/Nov/2024 11:08:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:09:59] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 112098
+[27/Nov/2024 11:09:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:10:01] "GET /admin/app/applicationtracking/46/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42192
+[27/Nov/2024 11:10:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:10:08] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 112098
+[27/Nov/2024 11:10:09] "GET /admin/app/applicationtracking/45/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 41725
+[27/Nov/2024 11:10:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:10:16] "POST /admin/app/applicationtracking/45/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 302 0
+[27/Nov/2024 11:10:16] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 112536
+[27/Nov/2024 11:10:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:10:19] "GET /admin/app/university/109/change/?_to_field=id HTTP/1.1" 200 80328
+[27/Nov/2024 11:10:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:16:25] "GET /admin/app/applicationtracking/45/change/ HTTP/1.1" 200 41434
+[27/Nov/2024 11:16:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:16:48] "GET /admin/app/university/109/change/?_to_field=id HTTP/1.1" 200 80328
+[27/Nov/2024 11:16:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:16:58] "POST /admin/app/university/109/change/?_to_field=id HTTP/1.1" 302 0
+[27/Nov/2024 11:16:58] "GET /admin/app/university/109/change/?_to_field=id HTTP/1.1" 200 80784
+[27/Nov/2024 11:16:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:17:14] "GET /admin/app/university/109/change/?_to_field=id HTTP/1.1" 200 80328
+[27/Nov/2024 11:17:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:18:43] "GET /admin/app/university/109/change/?_to_field=id HTTP/1.1" 200 80328
+[27/Nov/2024 11:18:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:18:50] "POST /admin/app/university/109/change/?_to_field=id HTTP/1.1" 302 0
+[27/Nov/2024 11:18:50] "GET /admin/app/university/109/change/?_to_field=id HTTP/1.1" 200 80784
+[27/Nov/2024 11:18:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:31:21] "POST /admin/app/university/109/change/?_to_field=id HTTP/1.1" 302 0
+[27/Nov/2024 11:31:21] "GET /admin/app/university/ HTTP/1.1" 200 266927
+[27/Nov/2024 11:31:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:31:27] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 236392
+[27/Nov/2024 11:31:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:31:28] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 236392
+[27/Nov/2024 11:31:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:31:28] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 236392
+[27/Nov/2024 11:31:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:31:29] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 236392
+[27/Nov/2024 11:31:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:31:34] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 102212
+[27/Nov/2024 11:31:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:31:55] "GET /admin/app/applicationtracking/44/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42035
+[27/Nov/2024 11:31:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:32:20] "GET /admin/app/university/134/change/?_to_field=id HTTP/1.1" 200 64517
+[27/Nov/2024 11:32:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:34:06] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 236392
+[27/Nov/2024 11:34:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:34:11] "GET /admin/app/applicationtracking/44/delete/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 19184
+[27/Nov/2024 11:34:12] "POST /admin/app/applicationtracking/44/delete/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 302 0
+[27/Nov/2024 11:34:12] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 97680
+[27/Nov/2024 11:34:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:34:15] "GET /admin/app/applicationtracking/40/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42444
+[27/Nov/2024 11:34:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:34:36] "GET /admin/app/university/126/change/?_to_field=id HTTP/1.1" 200 64651
+[27/Nov/2024 11:34:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:54:42] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 231537
+[27/Nov/2024 11:54:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:54:42] "GET /static/unfold/fonts/inter/styles.css HTTP/1.1" 200 608
+[27/Nov/2024 11:54:42] "GET /static/unfold/css/simplebar.css HTTP/1.1" 200 4647
+[27/Nov/2024 11:54:42] "GET /static/unfold/fonts/material-symbols/styles.css HTTP/1.1" 200 535
+[27/Nov/2024 11:54:42] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[27/Nov/2024 11:54:42] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[27/Nov/2024 11:54:42] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[27/Nov/2024 11:54:42] "GET /static/unfold/js/htmx.js HTTP/1.1" 200 42820
+[27/Nov/2024 11:54:42] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[27/Nov/2024 11:54:42] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[27/Nov/2024 11:54:42] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9048
+[27/Nov/2024 11:54:42] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[27/Nov/2024 11:54:42] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[27/Nov/2024 11:54:42] "GET /static/unfold/css/styles.css HTTP/1.1" 200 115794
+[27/Nov/2024 11:54:42] "GET /static/unfold/js/app.js HTTP/1.1" 200 8216
+[27/Nov/2024 11:54:42] "GET /static/unfold/js/simplebar.js HTTP/1.1" 200 27176
+[27/Nov/2024 11:54:42] "GET /static/unfold/js/chart.js HTTP/1.1" 200 200633
+[27/Nov/2024 11:54:42] "GET /static/unfold/js/alpine.anchor.js HTTP/1.1" 200 15524
+[27/Nov/2024 11:54:42] "GET /static/unfold/js/alpine.sort.js HTTP/1.1" 304 0
+[27/Nov/2024 11:54:42] "GET /static/unfold/js/alpine.persist.js HTTP/1.1" 200 837
+[27/Nov/2024 11:54:42] "GET /static/unfold/js/alpine.js HTTP/1.1" 200 44659
+[27/Nov/2024 11:54:42] "GET /static/unfold/fonts/inter/Inter-Regular.woff2 HTTP/1.1" 200 46552
+[27/Nov/2024 11:54:42] "GET /static/unfold/fonts/inter/Inter-Medium.woff2 HTTP/1.1" 200 46552
+[27/Nov/2024 11:54:42] "GET /static/unfold/fonts/inter/Inter-SemiBold.woff2 HTTP/1.1" 200 46552
+[27/Nov/2024 11:54:42] "GET /static/unfold/fonts/material-symbols/Material-Symbols-Outlined.woff2 HTTP/1.1" 200 256424
+[27/Nov/2024 11:54:44] "GET /admin/app/applicationtracking/40/change/ HTTP/1.1" 200 42198
+[27/Nov/2024 11:54:44] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[27/Nov/2024 11:54:44] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[27/Nov/2024 11:54:44] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[27/Nov/2024 11:54:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:54:44] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[27/Nov/2024 11:54:49] "GET /admin/app/applicationtracking/40/delete/ HTTP/1.1" 200 19184
+[27/Nov/2024 11:54:51] "POST /admin/app/applicationtracking/40/delete/ HTTP/1.1" 302 0
+[27/Nov/2024 11:54:51] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 227002
+[27/Nov/2024 11:54:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:54:52] "GET /admin/app/applicationtracking/34/change/ HTTP/1.1" 200 41913
+[27/Nov/2024 11:54:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:57:50] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 226620
+[27/Nov/2024 11:57:53] "GET /admin/app/applicationtracking/34/change/ HTTP/1.1" 200 41913
+[27/Nov/2024 11:57:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:57:53] "GET /admin/app/applicationtracking/33/change/ HTTP/1.1" 200 41913
+[27/Nov/2024 11:57:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 11:58:53] "GET /admin/app/applicationtracking/34/delete/ HTTP/1.1" 200 19184
+[27/Nov/2024 11:58:55] "GET /admin/app/applicationtracking/34/change/ HTTP/1.1" 200 41913
+[27/Nov/2024 12:00:27] "GET /admin/app/applicationtracking/34/delete/ HTTP/1.1" 200 19184
+[27/Nov/2024 12:00:28] "POST /admin/app/applicationtracking/34/delete/ HTTP/1.1" 302 0
+[27/Nov/2024 12:00:28] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 222157
+[27/Nov/2024 12:00:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:00:32] "GET /admin/app/applicationtracking/33/delete/ HTTP/1.1" 200 19184
+[27/Nov/2024 12:00:34] "POST /admin/app/applicationtracking/33/delete/ HTTP/1.1" 302 0
+[27/Nov/2024 12:00:34] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 217275
+[27/Nov/2024 12:00:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:00:40] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 216893
+[27/Nov/2024 12:00:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:00:41] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 216893
+[27/Nov/2024 12:00:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:00:41] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 216893
+[27/Nov/2024 12:00:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:00:41] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 216893
+[27/Nov/2024 12:00:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:00:41] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 216893
+[27/Nov/2024 12:00:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:03:50] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 82477
+[27/Nov/2024 12:03:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:03:54] "GET /admin/app/applicationtracking/25/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 41967
+[27/Nov/2024 12:03:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:05:11] "GET /admin/app/applicationtracking/25/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 41967
+[27/Nov/2024 12:05:11] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:05:12] "GET /admin/app/applicationtracking/25/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 41967
+[27/Nov/2024 12:05:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:05:12] "GET /admin/app/applicationtracking/25/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 41967
+[27/Nov/2024 12:05:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:05:12] "GET /admin/app/applicationtracking/25/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 41967
+[27/Nov/2024 12:05:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:05:15] "GET /admin/app/university/112/change/?_to_field=id HTTP/1.1" 200 64514
+[27/Nov/2024 12:05:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:05:15] "GET /static/admin/js/inlines.js HTTP/1.1" 200 14577
+[27/Nov/2024 12:05:54] "GET /admin/app/university/112/delete/ HTTP/1.1" 200 19324
+[27/Nov/2024 12:05:55] "POST /admin/app/university/112/delete/ HTTP/1.1" 302 0
+[27/Nov/2024 12:05:55] "GET /admin/app/university/ HTTP/1.1" 200 264096
+[27/Nov/2024 12:05:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:07:20] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 212029
+[27/Nov/2024 12:07:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:07:25] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 77560
+[27/Nov/2024 12:07:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:07:36] "GET /admin/app/applicationtracking/24/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 41948
+[27/Nov/2024 12:07:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:07:46] "GET /admin/app/applicationtracking/23/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42189
+[27/Nov/2024 12:07:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:07:46] "GET /admin/app/applicationtracking/22/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42128
+[27/Nov/2024 12:07:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:08:04] "POST /admin/app/applicationtracking/23/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 302 0
+[27/Nov/2024 12:08:04] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 73072
+[27/Nov/2024 12:08:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:08:06] "GET /admin/app/applicationtracking/22/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42128
+[27/Nov/2024 12:08:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:08:13] "POST /admin/app/applicationtracking/22/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 302 0
+[27/Nov/2024 12:08:13] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 68179
+[27/Nov/2024 12:08:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:08:59] "GET /admin/app/applicationtracking/23/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42189
+[27/Nov/2024 12:08:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:12:06] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 212029
+[27/Nov/2024 12:12:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:12:11] "GET /admin/app/applicationtracking/23/change/ HTTP/1.1" 200 41943
+[27/Nov/2024 12:12:11] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:12:12] "GET /admin/app/applicationtracking/22/change/ HTTP/1.1" 200 41882
+[27/Nov/2024 12:12:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:15:45] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 212029
+[27/Nov/2024 12:15:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:15:49] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 67741
+[27/Nov/2024 12:15:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:16:59] "GET /admin/app/applicationtracking/24/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 41948
+[27/Nov/2024 12:16:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:17:23] "GET /admin/app/applicationtracking/24/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 41948
+[27/Nov/2024 12:17:28] "GET /admin/app/university/111/change/?_to_field=id HTTP/1.1" 200 64518
+[27/Nov/2024 12:17:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:17:45] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 67741
+[27/Nov/2024 12:17:48] "GET /admin/app/applicationtracking/24/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 41948
+[27/Nov/2024 12:17:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:20:55] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 212029
+[27/Nov/2024 12:20:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:20:58] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 67741
+[27/Nov/2024 12:20:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:21:00] "GET /admin/app/applicationtracking/24/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 41948
+[27/Nov/2024 12:21:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:21:29] "POST /admin/app/applicationtracking/24/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 302 0
+[27/Nov/2024 12:21:29] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 68179
+[27/Nov/2024 12:21:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:21:33] "GET /admin/app/applicationtracking/24/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42000
+[27/Nov/2024 12:21:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:21:42] "POST /admin/app/applicationtracking/24/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 302 0
+[27/Nov/2024 12:21:42] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 68179
+[27/Nov/2024 12:21:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:21:43] "GET /admin/app/applicationtracking/24/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42000
+[27/Nov/2024 12:21:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:21:45] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 67741
+[27/Nov/2024 12:21:50] "POST /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 302 0
+[27/Nov/2024 12:21:50] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 63153
+[27/Nov/2024 12:21:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:21:54] "GET /admin/app/applicationtracking/19/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42016
+[27/Nov/2024 12:21:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:21:57] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 62811
+[27/Nov/2024 12:21:58] "GET /admin/app/applicationtracking/13/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42238
+[27/Nov/2024 12:21:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:22:10] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 212029
+[27/Nov/2024 12:22:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:22:33] "GET /admin/app/applicationtracking/24/change/ HTTP/1.1" 200 41754
+[27/Nov/2024 12:22:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:22:36] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 212029
+[27/Nov/2024 12:22:39] "GET /admin/app/applicationtracking/78/change/ HTTP/1.1" 200 41467
+[27/Nov/2024 12:22:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:22:50] "POST /admin/app/applicationtracking/78/change/ HTTP/1.1" 302 0
+[27/Nov/2024 12:22:50] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 212467
+[27/Nov/2024 12:22:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:23:09] "GET /admin/app/applicationtracking/24/change/ HTTP/1.1" 200 41754
+[27/Nov/2024 12:23:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:23:10] "GET /admin/app/applicationtracking/48/change/ HTTP/1.1" 200 41838
+[27/Nov/2024 12:23:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:23:11] "GET /admin/app/applicationtracking/51/change/ HTTP/1.1" 200 41730
+[27/Nov/2024 12:23:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:23:13] "GET /admin/app/applicationtracking/53/change/ HTTP/1.1" 200 41785
+[27/Nov/2024 12:23:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:23:15] "GET /admin/app/applicationtracking/63/change/ HTTP/1.1" 200 41380
+[27/Nov/2024 12:23:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:23:16] "GET /admin/app/applicationtracking/73/change/ HTTP/1.1" 200 41864
+[27/Nov/2024 12:23:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:23:17] "GET /admin/app/applicationtracking/77/change/ HTTP/1.1" 200 41467
+[27/Nov/2024 12:23:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:23:20] "GET /admin/app/applicationtracking/8/change/ HTTP/1.1" 200 41930
+[27/Nov/2024 12:23:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:23:48] "GET /admin/app/applicationtracking/48/delete/ HTTP/1.1" 200 19184
+[27/Nov/2024 12:23:49] "POST /admin/app/applicationtracking/48/delete/ HTTP/1.1" 302 0
+[27/Nov/2024 12:23:49] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 207511
+[27/Nov/2024 12:23:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:23:55] "GET /admin/app/applicationtracking/51/delete/ HTTP/1.1" 200 19184
+[27/Nov/2024 12:23:56] "POST /admin/app/applicationtracking/51/delete/ HTTP/1.1" 302 0
+[27/Nov/2024 12:23:56] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 202630
+[27/Nov/2024 12:23:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:24:06] "GET /admin/app/applicationtracking/63/delete/ HTTP/1.1" 200 19184
+[27/Nov/2024 12:24:07] "POST /admin/app/applicationtracking/63/delete/ HTTP/1.1" 302 0
+[27/Nov/2024 12:24:07] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 197743
+[27/Nov/2024 12:24:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:24:12] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 197361
+[27/Nov/2024 12:24:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:24:29] "GET /admin/app/applicationtracking/78/change/ HTTP/1.1" 200 41467
+[27/Nov/2024 12:24:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:24:36] "GET /admin/app/applicationtracking/73/change/ HTTP/1.1" 200 41864
+[27/Nov/2024 12:24:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:24:36] "GET /admin/app/applicationtracking/77/change/ HTTP/1.1" 200 41467
+[27/Nov/2024 12:24:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:25:38] "POST /admin/app/applicationtracking/77/change/ HTTP/1.1" 302 0
+[27/Nov/2024 12:25:39] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 197799
+[27/Nov/2024 12:25:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:25:40] "POST /admin/app/applicationtracking/73/change/ HTTP/1.1" 302 0
+[27/Nov/2024 12:25:40] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 197799
+[27/Nov/2024 12:25:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:25:53] "GET /admin/app/applicationtracking/53/change/ HTTP/1.1" 200 41785
+[27/Nov/2024 12:25:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:25:56] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 197361
+[27/Nov/2024 12:26:15] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 62811
+[27/Nov/2024 12:26:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:26:25] "GET /admin/app/applicationtracking/19/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42016
+[27/Nov/2024 12:26:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:26:28] "GET /admin/app/applicationtracking/8/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42176
+[27/Nov/2024 12:26:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:26:34] "GET /admin/app/applicationtracking/10/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42122
+[27/Nov/2024 12:26:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:26:35] "GET /admin/app/applicationtracking/11/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42128
+[27/Nov/2024 12:26:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:26:36] "GET /admin/app/applicationtracking/13/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42238
+[27/Nov/2024 12:26:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:27:34] "GET /admin/app/applicationtracking/8/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42176
+[27/Nov/2024 12:27:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:27:36] "GET /admin/app/applicationtracking/8/delete/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 19180
+[27/Nov/2024 12:27:38] "POST /admin/app/applicationtracking/8/delete/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 302 0
+[27/Nov/2024 12:27:38] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 58290
+[27/Nov/2024 12:27:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:27:44] "GET /admin/app/applicationtracking/10/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42122
+[27/Nov/2024 12:27:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:27:44] "GET /admin/app/applicationtracking/11/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42128
+[27/Nov/2024 12:27:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:27:52] "GET /admin/app/applicationtracking/13/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42238
+[27/Nov/2024 12:27:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:28:19] "GET /admin/app/university/140/change/?_to_field=id HTTP/1.1" 200 64522
+[27/Nov/2024 12:28:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:41:00] "GET /admin/app/university/140/change/?_to_field=id HTTP/1.1" 200 64522
+[27/Nov/2024 12:41:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:42:29] "POST /admin/app/applicationtracking/13/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 302 0
+[27/Nov/2024 12:42:29] "GET /admin/app/applicationtracking/13/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42743
+[27/Nov/2024 12:42:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:42:43] "POST /admin/app/applicationtracking/13/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 302 0
+[27/Nov/2024 12:42:43] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 53405
+[27/Nov/2024 12:42:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:42:47] "GET /admin/app/applicationtracking/19/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42016
+[27/Nov/2024 12:42:47] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:43:19] "GET /admin/app/university/121/change/?_to_field=id HTTP/1.1" 200 64607
+[27/Nov/2024 12:43:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:45:27] "GET /admin/app/applicationtracking/19/delete/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 19184
+[27/Nov/2024 12:45:28] "POST /admin/app/applicationtracking/19/delete/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 302 0
+[27/Nov/2024 12:45:28] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 48423
+[27/Nov/2024 12:45:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:45:30] "GET /admin/app/applicationtracking/11/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42128
+[27/Nov/2024 12:45:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:45:31] "GET /admin/app/applicationtracking/10/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42122
+[27/Nov/2024 12:45:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:45:38] "GET /admin/app/university/93/change/?_to_field=id HTTP/1.1" 200 80270
+[27/Nov/2024 12:45:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:45:58] "GET /admin/app/university/93/change/?_to_field=id HTTP/1.1" 200 80270
+[27/Nov/2024 12:45:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:46:05] "GET /admin/app/applicationtracking/10/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42122
+[27/Nov/2024 12:46:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:46:06] "GET /admin/app/applicationtracking/11/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42128
+[27/Nov/2024 12:46:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:47:42] "GET /admin/app/applicationtracking/11/change/?_changelist_filters=application_portal__exact%3DNOT_PICKED HTTP/1.1" 200 42128
+[27/Nov/2024 12:47:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 12:47:43] "GET /admin/app/university/93/change/?_to_field=id HTTP/1.1" 200 80270
+[27/Nov/2024 12:47:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 13:27:08] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 187609
+[27/Nov/2024 13:27:08] "GET /static/unfold/fonts/inter/styles.css HTTP/1.1" 304 0
+[27/Nov/2024 13:27:08] "GET /static/unfold/js/chart.js HTTP/1.1" 304 0
+[27/Nov/2024 13:27:08] "GET /static/unfold/fonts/material-symbols/styles.css HTTP/1.1" 304 0
+[27/Nov/2024 13:27:08] "GET /static/unfold/css/styles.css HTTP/1.1" 304 0
+[27/Nov/2024 13:27:08] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[27/Nov/2024 13:27:08] "GET /static/unfold/css/simplebar.css HTTP/1.1" 304 0
+[27/Nov/2024 13:27:08] "GET /static/unfold/js/simplebar.js HTTP/1.1" 304 0
+[27/Nov/2024 13:27:08] "GET /static/unfold/js/app.js HTTP/1.1" 304 0
+[27/Nov/2024 13:27:08] "GET /static/unfold/js/htmx.js HTTP/1.1" 304 0
+[27/Nov/2024 13:27:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 13:27:08] "GET /static/unfold/js/alpine.anchor.js HTTP/1.1" 304 0
+[27/Nov/2024 13:27:08] "GET /static/unfold/js/alpine.persist.js HTTP/1.1" 304 0
+[27/Nov/2024 13:27:08] "GET /static/unfold/js/alpine.sort.js HTTP/1.1" 304 0
+[27/Nov/2024 13:27:08] "GET /static/unfold/js/alpine.js HTTP/1.1" 304 0
+[27/Nov/2024 13:27:09] "GET /static/unfold/fonts/material-symbols/Material-Symbols-Outlined.woff2 HTTP/1.1" 304 0
+[27/Nov/2024 13:27:09] "GET /static/unfold/fonts/inter/Inter-SemiBold.woff2 HTTP/1.1" 304 0
+[27/Nov/2024 13:27:09] "GET /static/unfold/fonts/inter/Inter-Regular.woff2 HTTP/1.1" 304 0
+[27/Nov/2024 13:27:09] "GET /static/unfold/fonts/inter/Inter-Medium.woff2 HTTP/1.1" 304 0
+[27/Nov/2024 13:27:29] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 48041
+[27/Nov/2024 13:27:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 13:27:34] "POST /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 302 0
+[27/Nov/2024 13:27:34] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 32614
+[27/Nov/2024 13:27:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 13:27:39] "GET /admin/app/applicationtracking/? HTTP/1.1" 200 187609
+[27/Nov/2024 13:27:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 13:27:41] "GET /admin/app/applicationtracking/?status__exact=NS HTTP/1.1" 200 67081
+[27/Nov/2024 13:27:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 13:34:08] "GET /admin/app/applicationtracking/53/change/?_changelist_filters=status__exact%3DNS HTTP/1.1" 200 41951
+[27/Nov/2024 13:34:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 13:34:11] "GET /admin/app/applicationtracking/?status__exact=NS HTTP/1.1" 200 67081
+[27/Nov/2024 13:34:13] "GET /admin/app/applicationtracking/24/change/?_changelist_filters=status__exact%3DNS HTTP/1.1" 200 41920
+[27/Nov/2024 13:34:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 13:34:15] "GET /admin/app/applicationtracking/?status__exact=NS HTTP/1.1" 200 67081
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 26, 2024 - 23:41:35
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8001/
+Quit the server with CONTROL-C.
+
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x00000001f54a7840 (most recent call first):
+  <no Python frame>
+Watching for file changes with StatReloader
+[27/Nov/2024 13:35:10] "GET /admin/app/applicationtracking/?status__exact=NS HTTP/1.1" 200 67647
+[27/Nov/2024 13:35:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 13:35:10] "GET /admin/app/applicationtracking/?status__exact=NS HTTP/1.1" 200 67647
+[27/Nov/2024 13:35:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 13:35:10] "GET /admin/app/applicationtracking/?status__exact=NS HTTP/1.1" 200 67647
+[27/Nov/2024 13:35:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 13:35:15] "GET /admin/app/applicationtracking/53/change/?_changelist_filters=status__exact%3DNS HTTP/1.1" 200 41999
+[27/Nov/2024 13:35:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 13:35:18] "GET /admin/app/applicationtracking/?status__exact=NS HTTP/1.1" 200 67647
+[27/Nov/2024 13:35:26] "GET /admin/app/applicationtracking/24/change/?_changelist_filters=status__exact%3DNS HTTP/1.1" 200 41968
+[27/Nov/2024 13:35:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 13:35:27] "GET /admin/app/applicationtracking/?status__exact=NS HTTP/1.1" 200 67647
+[27/Nov/2024 13:35:28] "GET /admin/app/applicationtracking/24/change/?_changelist_filters=status__exact%3DNS HTTP/1.1" 200 41968
+[27/Nov/2024 13:35:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 13:35:29] "GET /admin/app/applicationtracking/24/delete/?_changelist_filters=status__exact%3DNS HTTP/1.1" 200 19184
+[27/Nov/2024 13:35:30] "POST /admin/app/applicationtracking/24/delete/?_changelist_filters=status__exact%3DNS HTTP/1.1" 302 0
+[27/Nov/2024 13:35:30] "GET /admin/app/applicationtracking/?status__exact=NS HTTP/1.1" 200 63071
+[27/Nov/2024 13:35:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 13:35:34] "GET /admin/app/applicationtracking/?status__exact=NS HTTP/1.1" 200 62689
+[27/Nov/2024 13:35:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 13:35:54] "GET /admin/app/applicationtracking/3/change/?_changelist_filters=status__exact%3DNS HTTP/1.1" 200 41553
+[27/Nov/2024 13:35:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 27, 2024 - 13:35:10
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 27, 2024 - 13:37:33
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 27, 2024 - 13:42:41
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 27, 2024 - 13:43:19
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 27, 2024 - 13:43:20
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[27/Nov/2024 13:45:22] "GET /admin/app/applicationtracking/3/delete/?_changelist_filters=status__exact%3DNS HTTP/1.1" 200 19180
+[27/Nov/2024 13:45:24] "POST /admin/app/applicationtracking/3/delete/?_changelist_filters=status__exact%3DNS HTTP/1.1" 302 0
+[27/Nov/2024 13:45:24] "GET /admin/app/applicationtracking/?status__exact=NS HTTP/1.1" 200 58166
+[27/Nov/2024 13:45:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 13:45:32] "GET /admin/app/applicationtracking/53/change/?_changelist_filters=status__exact%3DNS HTTP/1.1" 200 41999
+[27/Nov/2024 13:45:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 13:45:33] "GET /admin/app/applicationtracking/?status__exact=NS HTTP/1.1" 200 57785
+[27/Nov/2024 13:45:35] "GET /admin/app/applicationtracking/13/change/?_changelist_filters=status__exact%3DNS HTTP/1.1" 200 42244
+[27/Nov/2024 13:45:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 13:45:35] "GET /admin/app/applicationtracking/?status__exact=NS HTTP/1.1" 200 57785
+[27/Nov/2024 13:45:41] "GET /admin/app/applicationtracking/53/change/?_changelist_filters=status__exact%3DNS HTTP/1.1" 200 41999
+[27/Nov/2024 13:45:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 13:45:42] "GET /admin/app/applicationtracking/?status__exact=NS HTTP/1.1" 200 57785
+[27/Nov/2024 13:45:43] "POST /admin/app/applicationtracking/?status__exact=NS HTTP/1.1" 302 0
+[27/Nov/2024 13:45:43] "GET /admin/app/applicationtracking/?status__exact=NS HTTP/1.1" 200 53157
+[27/Nov/2024 13:45:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 13:45:51] "GET /admin/app/applicationtracking/13/change/?_changelist_filters=status__exact%3DNS HTTP/1.1" 200 42244
+[27/Nov/2024 13:45:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 13:45:57] "GET /admin/app/applicationtracking/?status__exact=NS HTTP/1.1" 200 52815
+[27/Nov/2024 13:46:00] "GET /admin/app/applicationtracking/13/change/?_changelist_filters=status__exact%3DNS HTTP/1.1" 200 42244
+[27/Nov/2024 13:46:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 13:47:13] "GET /admin/app/university/140/change/?_to_field=id HTTP/1.1" 200 64656
+[27/Nov/2024 13:47:13] "GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+[27/Nov/2024 13:47:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 14:35:07] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179579
+[27/Nov/2024 14:35:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 14:35:12] "GET /admin/app/applicationtracking/?application_portal__exact=NOT_PICKED HTTP/1.1" 200 32589
+[27/Nov/2024 14:35:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 14:35:15] "GET /admin/app/applicationtracking/? HTTP/1.1" 200 179579
+[27/Nov/2024 14:35:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 14:35:17] "GET /admin/app/applicationtracking/?status__exact=NS HTTP/1.1" 200 52815
+[27/Nov/2024 14:35:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 14:40:48] "GET /admin/app/applicationtracking/10/change/?_changelist_filters=status__exact%3DNS HTTP/1.1" 200 42090
+[27/Nov/2024 14:40:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 14:40:48] "GET /admin/app/applicationtracking/11/change/?_changelist_filters=status__exact%3DNS HTTP/1.1" 200 42096
+[27/Nov/2024 14:40:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 14:40:49] "GET /admin/app/applicationtracking/13/change/?_changelist_filters=status__exact%3DNS HTTP/1.1" 200 42244
+[27/Nov/2024 14:40:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 14:43:02] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179579
+[27/Nov/2024 14:43:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 14:43:07] "GET /admin/app/applicationtracking/53/change/ HTTP/1.1" 200 41833
+[27/Nov/2024 14:43:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 14:44:21] "POST /admin/app/applicationtracking/53/change/ HTTP/1.1" 302 0
+[27/Nov/2024 14:44:21] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 180017
+[27/Nov/2024 14:44:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 16:42:38] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179579
+[27/Nov/2024 16:42:38] "GET /static/unfold/fonts/inter/styles.css HTTP/1.1" 304 0
+[27/Nov/2024 16:42:38] "GET /static/unfold/fonts/material-symbols/styles.css HTTP/1.1" 304 0
+[27/Nov/2024 16:42:38] "GET /static/unfold/css/styles.css HTTP/1.1" 304 0
+[27/Nov/2024 16:42:38] "GET /static/unfold/css/simplebar.css HTTP/1.1" 304 0
+[27/Nov/2024 16:42:38] "GET /static/unfold/js/htmx.js HTTP/1.1" 304 0
+[27/Nov/2024 16:42:38] "GET /static/unfold/js/app.js HTTP/1.1" 304 0
+[27/Nov/2024 16:42:38] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[27/Nov/2024 16:42:38] "GET /static/unfold/js/chart.js HTTP/1.1" 304 0
+[27/Nov/2024 16:42:38] "GET /static/unfold/js/simplebar.js HTTP/1.1" 304 0
+[27/Nov/2024 16:42:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 16:42:38] "GET /static/unfold/js/alpine.anchor.js HTTP/1.1" 304 0
+[27/Nov/2024 16:42:38] "GET /static/unfold/js/alpine.persist.js HTTP/1.1" 304 0
+[27/Nov/2024 16:42:38] "GET /static/unfold/js/alpine.sort.js HTTP/1.1" 304 0
+[27/Nov/2024 16:42:38] "GET /static/unfold/js/alpine.js HTTP/1.1" 304 0
+[27/Nov/2024 16:42:38] "GET /static/unfold/fonts/material-symbols/Material-Symbols-Outlined.woff2 HTTP/1.1" 304 0
+[27/Nov/2024 16:42:38] "GET /static/unfold/fonts/inter/Inter-SemiBold.woff2 HTTP/1.1" 304 0
+[27/Nov/2024 16:42:38] "GET /static/unfold/fonts/inter/Inter-Regular.woff2 HTTP/1.1" 304 0
+[27/Nov/2024 16:42:38] "GET /static/unfold/fonts/inter/Inter-Medium.woff2 HTTP/1.1" 304 0
+[27/Nov/2024 16:42:48] "GET /admin/app/applicationtracking/53/change/ HTTP/1.1" 200 41833
+[27/Nov/2024 16:42:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[27/Nov/2024 16:43:00] "POST /admin/app/applicationtracking/53/change/ HTTP/1.1" 302 0
+[27/Nov/2024 16:43:00] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 180017
+[27/Nov/2024 16:43:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[28/Nov/2024 13:44:08] "GET /admin/ HTTP/1.1" 200 32727
+[28/Nov/2024 13:44:08] "GET /static/unfold/fonts/inter/styles.css HTTP/1.1" 304 0
+[28/Nov/2024 13:44:08] "GET /static/unfold/fonts/material-symbols/styles.css HTTP/1.1" 304 0
+[28/Nov/2024 13:44:08] "GET /static/unfold/css/styles.css HTTP/1.1" 304 0
+[28/Nov/2024 13:44:08] "GET /static/unfold/css/simplebar.css HTTP/1.1" 304 0
+[28/Nov/2024 13:44:08] "GET /static/unfold/js/app.js HTTP/1.1" 304 0
+[28/Nov/2024 13:44:08] "GET /static/unfold/js/htmx.js HTTP/1.1" 304 0
+[28/Nov/2024 13:44:08] "GET /static/unfold/js/chart.js HTTP/1.1" 304 0
+[28/Nov/2024 13:44:08] "GET /static/unfold/js/simplebar.js HTTP/1.1" 304 0
+[28/Nov/2024 13:44:08] "GET /static/unfold/js/alpine.anchor.js HTTP/1.1" 304 0
+[28/Nov/2024 13:44:08] "GET /static/unfold/js/alpine.persist.js HTTP/1.1" 304 0
+[28/Nov/2024 13:44:08] "GET /static/unfold/js/alpine.js HTTP/1.1" 304 0
+[28/Nov/2024 13:44:08] "GET /static/unfold/js/alpine.sort.js HTTP/1.1" 304 0
+[28/Nov/2024 13:44:08] "GET /static/unfold/fonts/inter/Inter-SemiBold.woff2 HTTP/1.1" 304 0
+[28/Nov/2024 13:44:08] "GET /static/unfold/fonts/inter/Inter-Regular.woff2 HTTP/1.1" 304 0
+[28/Nov/2024 13:44:08] "GET /static/unfold/fonts/material-symbols/Material-Symbols-Outlined.woff2 HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[28/Nov/2024 13:44:09] "GET /favicon.ico HTTP/1.1" 404 2212
+[28/Nov/2024 13:44:10] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179579
+[28/Nov/2024 13:44:10] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[28/Nov/2024 13:44:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[28/Nov/2024 13:44:10] "GET /static/unfold/fonts/inter/Inter-Medium.woff2 HTTP/1.1" 304 0
+[28/Nov/2024 13:44:36] "GET /admin/app/university/ HTTP/1.1" 200 263729
+[28/Nov/2024 13:44:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[28/Nov/2024 13:44:48] "GET /admin/app/university/114/change/ HTTP/1.1" 200 48968
+[28/Nov/2024 13:44:48] "GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+[28/Nov/2024 13:44:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[28/Nov/2024 13:50:38] "GET /admin/ HTTP/1.1" 200 32727
+Not Found: /favicon.ico
+[28/Nov/2024 13:50:39] "GET /favicon.ico HTTP/1.1" 404 2212
+[28/Nov/2024 13:50:40] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179579
+[28/Nov/2024 13:50:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[28/Nov/2024 13:50:43] "GET /admin/app/applicationtracking/add/ HTTP/1.1" 200 40067
+[28/Nov/2024 13:50:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[28/Nov/2024 13:51:04] "GET /admin/app/university/ HTTP/1.1" 200 263729
+[28/Nov/2024 13:51:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[28/Nov/2024 13:51:09] "GET /admin/app/university/114/change/ HTTP/1.1" 200 48968
+[28/Nov/2024 13:51:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[28/Nov/2024 13:53:18] "POST /admin/app/university/114/change/ HTTP/1.1" 302 0
+[28/Nov/2024 13:53:18] "GET /admin/app/university/ HTTP/1.1" 200 264155
+[28/Nov/2024 13:53:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[28/Nov/2024 20:51:21] "GET /admin/ HTTP/1.1" 200 32714
+[28/Nov/2024 20:51:21] "GET /static/unfold/fonts/material-symbols/styles.css HTTP/1.1" 304 0
+[28/Nov/2024 20:51:21] "GET /static/unfold/fonts/inter/styles.css HTTP/1.1" 304 0
+[28/Nov/2024 20:51:21] "GET /static/unfold/css/styles.css HTTP/1.1" 304 0
+[28/Nov/2024 20:51:21] "GET /static/unfold/css/simplebar.css HTTP/1.1" 304 0
+[28/Nov/2024 20:51:21] "GET /static/unfold/js/chart.js HTTP/1.1" 304 0
+[28/Nov/2024 20:51:21] "GET /static/unfold/js/htmx.js HTTP/1.1" 304 0
+[28/Nov/2024 20:51:21] "GET /static/unfold/js/app.js HTTP/1.1" 304 0
+[28/Nov/2024 20:51:21] "GET /static/unfold/js/simplebar.js HTTP/1.1" 304 0
+[28/Nov/2024 20:51:21] "GET /static/unfold/js/alpine.anchor.js HTTP/1.1" 304 0
+[28/Nov/2024 20:51:21] "GET /static/unfold/js/alpine.sort.js HTTP/1.1" 304 0
+[28/Nov/2024 20:51:21] "GET /static/unfold/js/alpine.js HTTP/1.1" 304 0
+[28/Nov/2024 20:51:21] "GET /static/unfold/js/alpine.persist.js HTTP/1.1" 304 0
+[28/Nov/2024 20:51:21] "GET /static/unfold/fonts/inter/Inter-Regular.woff2 HTTP/1.1" 304 0
+[28/Nov/2024 20:51:21] "GET /static/unfold/fonts/material-symbols/Material-Symbols-Outlined.woff2 HTTP/1.1" 304 0
+[28/Nov/2024 20:51:21] "GET /static/unfold/fonts/inter/Inter-SemiBold.woff2 HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[28/Nov/2024 20:51:21] "GET /favicon.ico HTTP/1.1" 404 2212
+[28/Nov/2024 20:51:47] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 184523
+[28/Nov/2024 20:51:47] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[28/Nov/2024 20:51:47] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[28/Nov/2024 20:51:47] "GET /static/unfold/fonts/inter/Inter-Medium.woff2 HTTP/1.1" 304 0
+[28/Nov/2024 20:52:35] "GET /admin/app/university/ HTTP/1.1" 200 263729
+[28/Nov/2024 20:52:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[28/Nov/2024 20:52:53] "GET /admin/app/university/172/change/ HTTP/1.1" 200 80068
+[28/Nov/2024 20:52:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[28/Nov/2024 20:52:53] "GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+[28/Nov/2024 20:53:01] "GET /admin/app/applicationtracking/79/change/ HTTP/1.1" 200 41392
+[28/Nov/2024 20:53:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[28/Nov/2024 20:53:06] "GET /admin/app/applicationtracking/79/delete/ HTTP/1.1" 200 19184
+[28/Nov/2024 20:53:07] "POST /admin/app/applicationtracking/79/delete/ HTTP/1.1" 302 0
+[28/Nov/2024 20:53:07] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179977
+[28/Nov/2024 20:53:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[29/Nov/2024 09:37:08] "GET /admin/ HTTP/1.1" 200 32657
+[29/Nov/2024 09:37:08] "GET /static/unfold/fonts/material-symbols/styles.css HTTP/1.1" 304 0
+[29/Nov/2024 09:37:08] "GET /static/unfold/fonts/inter/styles.css HTTP/1.1" 304 0
+[29/Nov/2024 09:37:08] "GET /static/unfold/css/styles.css HTTP/1.1" 304 0
+[29/Nov/2024 09:37:08] "GET /static/unfold/css/simplebar.css HTTP/1.1" 304 0
+[29/Nov/2024 09:37:08] "GET /static/unfold/js/chart.js HTTP/1.1" 304 0
+[29/Nov/2024 09:37:08] "GET /static/unfold/js/htmx.js HTTP/1.1" 304 0
+[29/Nov/2024 09:37:08] "GET /static/unfold/js/app.js HTTP/1.1" 304 0
+[29/Nov/2024 09:37:08] "GET /static/unfold/js/simplebar.js HTTP/1.1" 304 0
+[29/Nov/2024 09:37:08] "GET /static/unfold/js/alpine.persist.js HTTP/1.1" 304 0
+[29/Nov/2024 09:37:08] "GET /static/unfold/js/alpine.anchor.js HTTP/1.1" 304 0
+[29/Nov/2024 09:37:08] "GET /static/unfold/js/alpine.js HTTP/1.1" 304 0
+[29/Nov/2024 09:37:08] "GET /static/unfold/js/alpine.sort.js HTTP/1.1" 304 0
+[29/Nov/2024 09:37:08] "GET /static/unfold/fonts/inter/Inter-Regular.woff2 HTTP/1.1" 304 0
+[29/Nov/2024 09:37:08] "GET /static/unfold/fonts/material-symbols/Material-Symbols-Outlined.woff2 HTTP/1.1" 304 0
+[29/Nov/2024 09:37:08] "GET /static/unfold/fonts/inter/Inter-SemiBold.woff2 HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[29/Nov/2024 09:37:09] "GET /favicon.ico HTTP/1.1" 404 2212
+[29/Nov/2024 14:01:28] "GET /admin/ HTTP/1.1" 200 32657
+Not Found: /favicon.ico
+[29/Nov/2024 14:01:29] "GET /favicon.ico HTTP/1.1" 404 2212
+[29/Nov/2024 14:01:30] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179595
+[29/Nov/2024 14:01:30] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[29/Nov/2024 14:01:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[29/Nov/2024 14:01:30] "GET /static/unfold/fonts/inter/Inter-Medium.woff2 HTTP/1.1" 304 0
+[29/Nov/2024 14:02:10] "GET /admin/app/applicationtracking/77/change/ HTTP/1.1" 200 41515
+[29/Nov/2024 14:02:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[29/Nov/2024 14:02:19] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179595
+[29/Nov/2024 14:02:23] "GET /admin/app/applicationtracking/23/change/ HTTP/1.1" 200 41991
+[29/Nov/2024 14:02:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[29/Nov/2024 14:02:26] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179595
+[29/Nov/2024 14:42:55] "GET /admin/ HTTP/1.1" 200 32657
+[29/Nov/2024 14:42:56] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179595
+[29/Nov/2024 14:42:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Watching for file changes with StatReloader
+Error: That port is already in use.
+Invalid HTTP_HOST header: '3dd4-197-134-208-6.ngrok-free.app'. You may need to add '3dd4-197-134-208-6.ngrok-free.app' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '3dd4-197-134-208-6.ngrok-free.app'. You may need to add '3dd4-197-134-208-6.ngrok-free.app' to ALLOWED_HOSTS.
+Bad Request: /
+[30/Nov/2024 14:44:46] "GET / HTTP/1.1" 400 69569
+Invalid HTTP_HOST header: '3dd4-197-134-208-6.ngrok-free.app'. You may need to add '3dd4-197-134-208-6.ngrok-free.app' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '3dd4-197-134-208-6.ngrok-free.app'. You may need to add '3dd4-197-134-208-6.ngrok-free.app' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[30/Nov/2024 14:44:47] "GET /favicon.ico HTTP/1.1" 400 69370
+Invalid HTTP_HOST header: '3dd4-197-134-208-6.ngrok-free.app'. You may need to add '3dd4-197-134-208-6.ngrok-free.app' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '3dd4-197-134-208-6.ngrok-free.app'. You may need to add '3dd4-197-134-208-6.ngrok-free.app' to ALLOWED_HOSTS.
+Bad Request: /admin
+[30/Nov/2024 14:44:51] "GET /admin HTTP/1.1" 400 69480
+Invalid HTTP_HOST header: '3dd4-197-134-208-6.ngrok-free.app'. You may need to add '3dd4-197-134-208-6.ngrok-free.app' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '3dd4-197-134-208-6.ngrok-free.app'. You may need to add '3dd4-197-134-208-6.ngrok-free.app' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[30/Nov/2024 14:44:53] "GET /favicon.ico HTTP/1.1" 400 69375
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/playground/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 27, 2024 - 13:44:04
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8001/
+Quit the server with CONTROL-C.
+
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x00000001f54a7840 (most recent call first):
+  <no Python frame>
+Watching for file changes with StatReloader
+[30/Nov/2024 14:45:26] "GET /admin HTTP/1.1" 301 0
+[30/Nov/2024 14:45:27] "GET /admin/ HTTP/1.1" 302 0
+[30/Nov/2024 14:45:27] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 9530
+[30/Nov/2024 14:45:28] "GET /static/unfold/fonts/inter/styles.css HTTP/1.1" 200 608
+[30/Nov/2024 14:45:28] "GET /static/unfold/fonts/material-symbols/styles.css HTTP/1.1" 200 535
+[30/Nov/2024 14:45:28] "GET /static/unfold/css/styles.css HTTP/1.1" 200 115794
+[30/Nov/2024 14:45:28] "GET /static/unfold/js/app.js HTTP/1.1" 200 8216
+[30/Nov/2024 14:45:28] "GET /static/unfold/css/simplebar.css HTTP/1.1" 200 4647
+[30/Nov/2024 14:45:28] "GET /static/unfold/js/simplebar.js HTTP/1.1" 200 27176
+[30/Nov/2024 14:45:28] "GET /static/unfold/js/htmx.js HTTP/1.1" 200 42820
+[30/Nov/2024 14:45:28] "GET /static/unfold/js/chart.js HTTP/1.1" 200 200633
+[30/Nov/2024 14:45:33] "GET /static/unfold/js/alpine.anchor.js HTTP/1.1" 200 15524
+[30/Nov/2024 14:45:35] "GET /static/unfold/js/alpine.persist.js HTTP/1.1" 200 837
+[30/Nov/2024 14:45:35] "GET /static/unfold/js/alpine.sort.js HTTP/1.1" 200 37891
+[30/Nov/2024 14:45:35] "GET /static/unfold/js/alpine.js HTTP/1.1" 200 44659
+[30/Nov/2024 14:45:37] "GET /static/unfold/fonts/inter/Inter-SemiBold.woff2 HTTP/1.1" 200 46552
+[30/Nov/2024 14:45:37] "GET /static/unfold/fonts/inter/Inter-Medium.woff2 HTTP/1.1" 200 46552
+[30/Nov/2024 14:45:37] "GET /static/unfold/fonts/material-symbols/Material-Symbols-Outlined.woff2 HTTP/1.1" 200 256424
+[30/Nov/2024 14:45:37] "GET /static/unfold/fonts/inter/Inter-Regular.woff2 HTTP/1.1" 200 46552
+Not Found: /favicon.ico
+[30/Nov/2024 14:45:44] "GET /favicon.ico HTTP/1.1" 404 2231
+[30/Nov/2024 14:47:46] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 9530
+[30/Nov/2024 14:47:46] "GET /static/unfold/fonts/inter/styles.css HTTP/1.1" 200 608
+[30/Nov/2024 14:47:46] "GET /static/unfold/fonts/material-symbols/styles.css HTTP/1.1" 200 535
+[30/Nov/2024 14:47:46] "GET /static/unfold/css/simplebar.css HTTP/1.1" 200 4647
+[30/Nov/2024 14:47:46] "GET /static/unfold/js/app.js HTTP/1.1" 200 8216
+[30/Nov/2024 14:47:46] "GET /static/unfold/css/styles.css HTTP/1.1" 200 115794
+[30/Nov/2024 14:47:46] "GET /static/unfold/js/simplebar.js HTTP/1.1" 200 27176
+[30/Nov/2024 14:47:46] "GET /static/unfold/js/htmx.js HTTP/1.1" 200 42820
+[30/Nov/2024 14:47:46] "GET /static/unfold/js/chart.js HTTP/1.1" 200 200633
+[30/Nov/2024 14:47:51] "GET /static/unfold/js/alpine.anchor.js HTTP/1.1" 200 15524
+[30/Nov/2024 14:47:54] "GET /static/unfold/js/alpine.persist.js HTTP/1.1" 200 837
+[30/Nov/2024 14:47:54] "GET /static/unfold/js/alpine.sort.js HTTP/1.1" 200 37891
+[30/Nov/2024 14:47:54] "GET /static/unfold/js/alpine.js HTTP/1.1" 200 44659
+[30/Nov/2024 14:47:56] "GET /static/unfold/fonts/inter/Inter-SemiBold.woff2 HTTP/1.1" 200 46552
+[30/Nov/2024 14:47:56] "GET /static/unfold/fonts/inter/Inter-Medium.woff2 HTTP/1.1" 200 46552
+[30/Nov/2024 14:47:56] "GET /static/unfold/fonts/inter/Inter-Regular.woff2 HTTP/1.1" 200 46552
+[30/Nov/2024 14:47:56] "GET /static/unfold/fonts/material-symbols/Material-Symbols-Outlined.woff2 HTTP/1.1" 200 256424
+Not Found: /favicon.ico
+[30/Nov/2024 14:48:03] "GET /favicon.ico HTTP/1.1" 404 2231
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /admin/
+[30/Nov/2024 21:00:15] "GET /admin/ HTTP/1.1" 400 68843
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /admin/
+[30/Nov/2024 21:00:16] "GET /admin/ HTTP/1.1" 400 68569
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[30/Nov/2024 21:00:16] "GET /favicon.ico HTTP/1.1" 400 68338
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /admin/
+[30/Nov/2024 21:00:18] "GET /admin/ HTTP/1.1" 400 68843
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /admin/
+[30/Nov/2024 21:00:18] "GET /admin/ HTTP/1.1" 400 68569
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[30/Nov/2024 21:00:18] "GET /favicon.ico HTTP/1.1" 400 68338
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /admin/
+[30/Nov/2024 21:00:58] "GET /admin/ HTTP/1.1" 400 68706
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[30/Nov/2024 21:00:58] "GET /favicon.ico HTTP/1.1" 400 68338
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /admin/
+[30/Nov/2024 21:00:58] "GET /admin/ HTTP/1.1" 400 68706
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[30/Nov/2024 21:00:58] "GET /favicon.ico HTTP/1.1" 400 68338
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /admin/
+[30/Nov/2024 21:00:58] "GET /admin/ HTTP/1.1" 400 68706
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[30/Nov/2024 21:00:58] "GET /favicon.ico HTTP/1.1" 400 68338
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /admin/
+[30/Nov/2024 21:00:59] "GET /admin/ HTTP/1.1" 400 68706
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[30/Nov/2024 21:00:59] "GET /favicon.ico HTTP/1.1" 400 68338
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /admin/
+[30/Nov/2024 21:00:59] "GET /admin/ HTTP/1.1" 400 68706
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[30/Nov/2024 21:00:59] "GET /favicon.ico HTTP/1.1" 400 68338
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /admin/
+[30/Nov/2024 21:00:59] "GET /admin/ HTTP/1.1" 400 68706
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[30/Nov/2024 21:00:59] "GET /favicon.ico HTTP/1.1" 400 68338
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /admin/
+[30/Nov/2024 21:00:59] "GET /admin/ HTTP/1.1" 400 68706
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[30/Nov/2024 21:00:59] "GET /favicon.ico HTTP/1.1" 400 68338
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /admin/
+[30/Nov/2024 21:00:59] "GET /admin/ HTTP/1.1" 400 68706
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[30/Nov/2024 21:00:59] "GET /favicon.ico HTTP/1.1" 400 68338
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /admin/
+[30/Nov/2024 21:01:00] "GET /admin/ HTTP/1.1" 400 68706
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[30/Nov/2024 21:01:00] "GET /favicon.ico HTTP/1.1" 400 68338
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /admin/
+[30/Nov/2024 21:01:00] "GET /admin/ HTTP/1.1" 400 68706
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[30/Nov/2024 21:01:00] "GET /favicon.ico HTTP/1.1" 400 68338
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /admin/
+[30/Nov/2024 21:01:00] "GET /admin/ HTTP/1.1" 400 68706
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[30/Nov/2024 21:01:00] "GET /favicon.ico HTTP/1.1" 400 68338
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /admin/
+[30/Nov/2024 21:01:00] "GET /admin/ HTTP/1.1" 400 68706
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[30/Nov/2024 21:01:00] "GET /favicon.ico HTTP/1.1" 400 68338
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /admin/
+[30/Nov/2024 21:01:00] "GET /admin/ HTTP/1.1" 400 68706
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[30/Nov/2024 21:01:00] "GET /favicon.ico HTTP/1.1" 400 68338
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /admin/
+[30/Nov/2024 21:01:01] "GET /admin/ HTTP/1.1" 400 68706
+Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/omar/Main/Software_Projects/Projects/Personal/playground/.venv/lib/python3.11/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[30/Nov/2024 21:01:01] "GET /favicon.ico HTTP/1.1" 400 68338
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/playground/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 30, 2024 - 14:45:26
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8001/
+Quit the server with CONTROL-C.
+
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x00000001f54a7840 (most recent call first):
+  <no Python frame>
+Watching for file changes with StatReloader
+[30/Nov/2024 21:01:17] "GET /admin/ HTTP/1.1" 200 32657
+[30/Nov/2024 21:01:17] "GET /static/unfold/fonts/material-symbols/styles.css HTTP/1.1" 304 0
+[30/Nov/2024 21:01:17] "GET /static/unfold/fonts/inter/styles.css HTTP/1.1" 304 0
+[30/Nov/2024 21:01:17] "GET /static/unfold/css/simplebar.css HTTP/1.1" 304 0
+[30/Nov/2024 21:01:17] "GET /static/unfold/css/styles.css HTTP/1.1" 304 0
+[30/Nov/2024 21:01:17] "GET /static/unfold/js/simplebar.js HTTP/1.1" 304 0
+[30/Nov/2024 21:01:17] "GET /static/unfold/js/chart.js HTTP/1.1" 304 0
+[30/Nov/2024 21:01:17] "GET /static/unfold/js/htmx.js HTTP/1.1" 304 0
+[30/Nov/2024 21:01:17] "GET /static/unfold/js/app.js HTTP/1.1" 304 0
+[30/Nov/2024 21:01:17] "GET /static/unfold/js/alpine.anchor.js HTTP/1.1" 304 0
+[30/Nov/2024 21:01:17] "GET /static/unfold/js/alpine.persist.js HTTP/1.1" 304 0
+[30/Nov/2024 21:01:17] "GET /static/unfold/js/alpine.sort.js HTTP/1.1" 304 0
+[30/Nov/2024 21:01:17] "GET /static/unfold/js/alpine.js HTTP/1.1" 304 0
+[30/Nov/2024 21:01:17] "GET /static/unfold/fonts/inter/Inter-SemiBold.woff2 HTTP/1.1" 304 0
+[30/Nov/2024 21:01:17] "GET /static/unfold/fonts/inter/Inter-Regular.woff2 HTTP/1.1" 304 0
+[30/Nov/2024 21:01:17] "GET /static/unfold/fonts/material-symbols/Material-Symbols-Outlined.woff2 HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[30/Nov/2024 21:01:17] "GET /favicon.ico HTTP/1.1" 404 2212
+[30/Nov/2024 21:01:18] "GET /admin/ HTTP/1.1" 200 32657
+[30/Nov/2024 21:01:19] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179595
+[30/Nov/2024 21:01:19] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[30/Nov/2024 21:01:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[30/Nov/2024 21:01:19] "GET /static/unfold/fonts/inter/Inter-Medium.woff2 HTTP/1.1" 304 0
+[30/Nov/2024 21:01:24] "GET /admin/app/applicationtracking/23/change/ HTTP/1.1" 200 41991
+[30/Nov/2024 21:01:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[30/Nov/2024 21:01:24] "GET /admin/app/applicationtracking/22/change/ HTTP/1.1" 200 41930
+[30/Nov/2024 21:01:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[01/Dec/2024 07:49:04] "GET /admin/ HTTP/1.1" 200 32657
+[01/Dec/2024 07:49:04] "GET /static/unfold/fonts/material-symbols/styles.css HTTP/1.1" 304 0
+[01/Dec/2024 07:49:04] "GET /static/unfold/fonts/inter/styles.css HTTP/1.1" 304 0
+[01/Dec/2024 07:49:04] "GET /static/unfold/css/styles.css HTTP/1.1" 304 0
+[01/Dec/2024 07:49:04] "GET /static/unfold/js/chart.js HTTP/1.1" 304 0
+[01/Dec/2024 07:49:04] "GET /static/unfold/css/simplebar.css HTTP/1.1" 304 0
+[01/Dec/2024 07:49:04] "GET /static/unfold/js/htmx.js HTTP/1.1" 304 0
+[01/Dec/2024 07:49:04] "GET /static/unfold/js/app.js HTTP/1.1" 304 0
+[01/Dec/2024 07:49:04] "GET /static/unfold/js/simplebar.js HTTP/1.1" 304 0
+[01/Dec/2024 07:49:04] "GET /static/unfold/js/alpine.anchor.js HTTP/1.1" 304 0
+[01/Dec/2024 07:49:04] "GET /static/unfold/js/alpine.persist.js HTTP/1.1" 304 0
+[01/Dec/2024 07:49:04] "GET /static/unfold/js/alpine.sort.js HTTP/1.1" 304 0
+[01/Dec/2024 07:49:04] "GET /static/unfold/js/alpine.js HTTP/1.1" 304 0
+[01/Dec/2024 07:49:04] "GET /static/unfold/fonts/material-symbols/Material-Symbols-Outlined.woff2 HTTP/1.1" 304 0
+[01/Dec/2024 07:49:04] "GET /static/unfold/fonts/inter/Inter-SemiBold.woff2 HTTP/1.1" 304 0
+[01/Dec/2024 07:49:04] "GET /static/unfold/fonts/inter/Inter-Regular.woff2 HTTP/1.1" 304 0
+[01/Dec/2024 07:49:06] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179595
+[01/Dec/2024 07:49:06] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[01/Dec/2024 07:49:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[01/Dec/2024 07:49:06] "GET /static/unfold/fonts/inter/Inter-Medium.woff2 HTTP/1.1" 304 0
+[01/Dec/2024 07:49:12] "GET /admin/app/applicationtracking/77/change/ HTTP/1.1" 200 41515
+[01/Dec/2024 07:49:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[01/Dec/2024 07:49:18] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179595
+[01/Dec/2024 07:49:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 20:22:07] "GET /admin/ HTTP/1.1" 200 32657
+[02/Dec/2024 20:22:07] "GET /static/unfold/css/styles.css HTTP/1.1" 304 0
+[02/Dec/2024 20:22:07] "GET /static/unfold/fonts/material-symbols/styles.css HTTP/1.1" 304 0
+[02/Dec/2024 20:22:07] "GET /static/unfold/fonts/inter/styles.css HTTP/1.1" 304 0
+[02/Dec/2024 20:22:07] "GET /static/unfold/css/simplebar.css HTTP/1.1" 304 0
+[02/Dec/2024 20:22:07] "GET /static/unfold/js/htmx.js HTTP/1.1" 304 0
+[02/Dec/2024 20:22:07] "GET /static/unfold/js/chart.js HTTP/1.1" 304 0
+[02/Dec/2024 20:22:07] "GET /static/unfold/js/app.js HTTP/1.1" 304 0
+[02/Dec/2024 20:22:07] "GET /static/unfold/js/simplebar.js HTTP/1.1" 304 0
+[02/Dec/2024 20:22:07] "GET /static/unfold/js/alpine.anchor.js HTTP/1.1" 304 0
+[02/Dec/2024 20:22:07] "GET /static/unfold/js/alpine.persist.js HTTP/1.1" 304 0
+[02/Dec/2024 20:22:07] "GET /static/unfold/js/alpine.js HTTP/1.1" 304 0
+[02/Dec/2024 20:22:07] "GET /static/unfold/js/alpine.sort.js HTTP/1.1" 304 0
+[02/Dec/2024 20:22:07] "GET /static/unfold/fonts/material-symbols/Material-Symbols-Outlined.woff2 HTTP/1.1" 304 0
+[02/Dec/2024 20:22:07] "GET /static/unfold/fonts/inter/Inter-Regular.woff2 HTTP/1.1" 304 0
+[02/Dec/2024 20:22:07] "GET /static/unfold/fonts/inter/Inter-SemiBold.woff2 HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[02/Dec/2024 20:22:07] "GET /favicon.ico HTTP/1.1" 404 2212
+[02/Dec/2024 20:22:09] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179595
+[02/Dec/2024 20:22:09] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[02/Dec/2024 20:22:09] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[02/Dec/2024 20:22:09] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[02/Dec/2024 20:22:09] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[02/Dec/2024 20:22:09] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[02/Dec/2024 20:22:09] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[02/Dec/2024 20:22:09] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[02/Dec/2024 20:22:09] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[02/Dec/2024 20:22:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 20:22:09] "GET /static/unfold/fonts/inter/Inter-Medium.woff2 HTTP/1.1" 304 0
+[02/Dec/2024 20:22:13] "GET /admin/app/university/ HTTP/1.1" 200 263729
+[02/Dec/2024 20:22:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 20:22:15] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179595
+[02/Dec/2024 20:22:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 20:24:58] "GET /admin/app/universityprogram/ HTTP/1.1" 200 658855
+[02/Dec/2024 20:24:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 20:25:05] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179595
+[02/Dec/2024 20:25:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 20:31:23] "GET /admin/ HTTP/1.1" 200 32657
+[02/Dec/2024 20:31:25] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179595
+[02/Dec/2024 20:31:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 20:31:37] "POST /admin/app/applicationtracking/ HTTP/1.1" 200 19396
+[02/Dec/2024 20:31:37] "GET /static/admin/js/cancel.js HTTP/1.1" 304 0
+[02/Dec/2024 20:31:38] "POST /admin/app/applicationtracking/ HTTP/1.1" 302 0
+[02/Dec/2024 20:31:38] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 175045
+[02/Dec/2024 20:31:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 20:31:43] "POST /admin/app/applicationtracking/ HTTP/1.1" 302 0
+[02/Dec/2024 20:31:43] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 175049
+[02/Dec/2024 20:31:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 20:33:08] "GET /admin/app/applicationtracking/73/change/ HTTP/1.1" 200 41912
+[02/Dec/2024 20:33:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 20:33:08] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[02/Dec/2024 20:33:08] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[02/Dec/2024 20:33:08] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[02/Dec/2024 20:33:08] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[02/Dec/2024 20:33:10] "GET /admin/app/university/175/change/?_to_field=id HTTP/1.1" 200 96849
+[02/Dec/2024 20:33:10] "GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+[02/Dec/2024 20:33:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 20:53:28] "GET /admin/ HTTP/1.1" 200 32654
+[02/Dec/2024 20:53:30] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 174707
+[02/Dec/2024 20:53:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 20:53:33] "GET /admin/app/applicationtracking/78/change/ HTTP/1.1" 200 41515
+[02/Dec/2024 20:53:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 20:53:35] "GET /admin/app/university/175/change/?_to_field=id HTTP/1.1" 200 96849
+[02/Dec/2024 20:53:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 20:56:53] "GET /admin/ HTTP/1.1" 200 32654
+[02/Dec/2024 20:56:55] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 174707
+[02/Dec/2024 20:56:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 20:56:57] "GET /admin/app/applicationtracking/73/change/ HTTP/1.1" 200 41912
+[02/Dec/2024 20:56:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 20:56:57] "GET /admin/app/applicationtracking/77/change/ HTTP/1.1" 200 41515
+[02/Dec/2024 20:56:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 20:56:58] "GET /admin/app/applicationtracking/78/change/ HTTP/1.1" 200 41515
+[02/Dec/2024 20:56:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 21:02:40] "GET /admin/ HTTP/1.1" 200 32654
+Not Found: /favicon.ico
+[02/Dec/2024 21:02:41] "GET /favicon.ico HTTP/1.1" 404 2212
+[02/Dec/2024 21:02:42] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 174707
+[02/Dec/2024 21:02:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 21:02:45] "GET /admin/app/universityprogram/ HTTP/1.1" 200 658855
+[02/Dec/2024 21:02:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 21:02:47] "GET /admin/app/university/ HTTP/1.1" 200 263729
+[02/Dec/2024 21:02:47] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 21:02:51] "GET /admin/app/university/158/change/ HTTP/1.1" 200 48924
+[02/Dec/2024 21:02:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 21:07:44] "GET /admin/ HTTP/1.1" 200 32654
+[02/Dec/2024 21:07:46] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 174707
+[02/Dec/2024 21:07:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 21:07:51] "GET /admin/app/applicationtracking/78/change/ HTTP/1.1" 200 41515
+[02/Dec/2024 21:07:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 21:08:12] "GET /admin/app/university/ HTTP/1.1" 200 263729
+[02/Dec/2024 21:08:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 21:08:15] "GET /admin/app/university/158/change/ HTTP/1.1" 200 48924
+[02/Dec/2024 21:08:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 21:09:02] "POST /admin/app/university/158/change/ HTTP/1.1" 302 0
+[02/Dec/2024 21:09:02] "GET /admin/app/university/158/change/ HTTP/1.1" 200 65086
+[02/Dec/2024 21:09:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 21:09:05] "GET /admin/app/university/ HTTP/1.1" 200 263729
+[02/Dec/2024 21:09:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[02/Dec/2024 21:09:07] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179610
+[02/Dec/2024 21:09:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[03/Dec/2024 09:23:15] "GET /admin/ HTTP/1.1" 200 32621
+Not Found: /favicon.ico
+[03/Dec/2024 09:23:16] "GET /favicon.ico HTTP/1.1" 404 2212
+[03/Dec/2024 09:23:18] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179610
+[03/Dec/2024 09:23:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[03/Dec/2024 09:39:51] "GET /admin/ HTTP/1.1" 200 32621
+[03/Dec/2024 09:39:54] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179610
+[03/Dec/2024 09:39:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[03/Dec/2024 09:39:57] "GET /admin/app/university/ HTTP/1.1" 200 263729
+[03/Dec/2024 09:39:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[03/Dec/2024 09:40:00] "GET /admin/app/university/158/change/ HTTP/1.1" 200 64651
+[03/Dec/2024 09:40:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[03/Dec/2024 09:40:09] "GET /admin/app/university/ HTTP/1.1" 200 263729
+[03/Dec/2024 09:40:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[03/Dec/2024 09:40:14] "GET /admin/app/university/141/change/ HTTP/1.1" 200 64792
+[03/Dec/2024 09:40:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[03/Dec/2024 09:40:27] "POST /admin/app/university/141/change/ HTTP/1.1" 302 0
+[03/Dec/2024 09:40:27] "GET /admin/app/university/ HTTP/1.1" 200 264150
+[03/Dec/2024 09:40:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[03/Dec/2024 09:40:28] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179610
+[03/Dec/2024 09:40:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[03/Dec/2024 09:40:46] "GET /admin/app/applicationtracking/13/change/ HTTP/1.1" 200 42078
+[03/Dec/2024 09:40:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[03/Dec/2024 09:40:53] "GET /admin/app/university/140/change/?_to_field=id HTTP/1.1" 200 64656
+[03/Dec/2024 09:40:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[03/Dec/2024 09:41:41] "POST /admin/app/applicationtracking/13/change/ HTTP/1.1" 302 0
+[03/Dec/2024 09:41:41] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 180048
+[03/Dec/2024 09:41:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[03/Dec/2024 09:41:50] "GET /admin/app/applicationtracking/80/change/ HTTP/1.1" 200 41439
+[03/Dec/2024 09:41:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[03/Dec/2024 09:41:59] "POST /admin/app/applicationtracking/80/change/ HTTP/1.1" 302 0
+[03/Dec/2024 09:41:59] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 180048
+[03/Dec/2024 09:41:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[03/Dec/2024 09:42:08] "GET /admin/app/applicationtracking/11/change/ HTTP/1.1" 200 41930
+[03/Dec/2024 09:42:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[03/Dec/2024 09:42:23] "POST /admin/app/applicationtracking/11/change/ HTTP/1.1" 302 0
+[03/Dec/2024 09:42:23] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 180048
+[03/Dec/2024 09:42:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[03/Dec/2024 09:42:40] "GET /admin/ HTTP/1.1" 200 32713
+[03/Dec/2024 09:42:43] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179610
+[03/Dec/2024 09:42:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[03/Dec/2024 09:42:45] "GET /admin/app/applicationtracking/10/change/ HTTP/1.1" 200 41924
+[03/Dec/2024 09:42:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[03/Dec/2024 12:44:29] "GET /admin/ HTTP/1.1" 200 32713
+[03/Dec/2024 12:44:29] "GET /static/unfold/css/styles.css HTTP/1.1" 304 0
+[03/Dec/2024 12:44:29] "GET /static/unfold/fonts/material-symbols/styles.css HTTP/1.1" 304 0
+[03/Dec/2024 12:44:29] "GET /static/unfold/fonts/inter/styles.css HTTP/1.1" 304 0
+[03/Dec/2024 12:44:29] "GET /static/unfold/css/simplebar.css HTTP/1.1" 304 0
+[03/Dec/2024 12:44:29] "GET /static/unfold/js/app.js HTTP/1.1" 304 0
+[03/Dec/2024 12:44:29] "GET /static/unfold/js/htmx.js HTTP/1.1" 304 0
+[03/Dec/2024 12:44:29] "GET /static/unfold/js/chart.js HTTP/1.1" 304 0
+[03/Dec/2024 12:44:29] "GET /static/unfold/js/simplebar.js HTTP/1.1" 304 0
+[03/Dec/2024 12:44:29] "GET /static/unfold/js/alpine.anchor.js HTTP/1.1" 304 0
+[03/Dec/2024 12:44:29] "GET /static/unfold/js/alpine.persist.js HTTP/1.1" 304 0
+[03/Dec/2024 12:44:29] "GET /static/unfold/js/alpine.sort.js HTTP/1.1" 304 0
+[03/Dec/2024 12:44:29] "GET /static/unfold/js/alpine.js HTTP/1.1" 304 0
+[03/Dec/2024 12:44:29] "GET /static/unfold/fonts/material-symbols/Material-Symbols-Outlined.woff2 HTTP/1.1" 304 0
+[03/Dec/2024 12:44:29] "GET /static/unfold/fonts/inter/Inter-SemiBold.woff2 HTTP/1.1" 304 0
+[03/Dec/2024 12:44:29] "GET /static/unfold/fonts/inter/Inter-Regular.woff2 HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[03/Dec/2024 12:44:29] "GET /favicon.ico HTTP/1.1" 404 2212
+[03/Dec/2024 12:44:33] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179610
+[03/Dec/2024 12:44:33] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[03/Dec/2024 12:44:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[03/Dec/2024 12:44:33] "GET /static/unfold/fonts/inter/Inter-Medium.woff2 HTTP/1.1" 304 0
+[04/Dec/2024 14:39:41] "GET /admin/ HTTP/1.1" 200 32713
+[04/Dec/2024 14:39:41] "GET /static/unfold/css/styles.css HTTP/1.1" 304 0
+[04/Dec/2024 14:39:41] "GET /static/unfold/fonts/inter/styles.css HTTP/1.1" 304 0
+[04/Dec/2024 14:39:41] "GET /static/unfold/fonts/material-symbols/styles.css HTTP/1.1" 304 0
+[04/Dec/2024 14:39:41] "GET /static/unfold/css/simplebar.css HTTP/1.1" 304 0
+[04/Dec/2024 14:39:41] "GET /static/unfold/js/chart.js HTTP/1.1" 304 0
+[04/Dec/2024 14:39:41] "GET /static/unfold/js/htmx.js HTTP/1.1" 304 0
+[04/Dec/2024 14:39:41] "GET /static/unfold/js/app.js HTTP/1.1" 304 0
+[04/Dec/2024 14:39:41] "GET /static/unfold/js/simplebar.js HTTP/1.1" 304 0
+[04/Dec/2024 14:39:41] "GET /static/unfold/js/alpine.anchor.js HTTP/1.1" 304 0
+[04/Dec/2024 14:39:41] "GET /static/unfold/js/alpine.js HTTP/1.1" 304 0
+[04/Dec/2024 14:39:41] "GET /static/unfold/js/alpine.sort.js HTTP/1.1" 304 0
+[04/Dec/2024 14:39:41] "GET /static/unfold/js/alpine.persist.js HTTP/1.1" 304 0
+[04/Dec/2024 14:39:41] "GET /static/unfold/fonts/inter/Inter-SemiBold.woff2 HTTP/1.1" 304 0
+[04/Dec/2024 14:39:41] "GET /static/unfold/fonts/inter/Inter-Regular.woff2 HTTP/1.1" 304 0
+[04/Dec/2024 14:39:41] "GET /static/unfold/fonts/material-symbols/Material-Symbols-Outlined.woff2 HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[04/Dec/2024 14:39:42] "GET /favicon.ico HTTP/1.1" 404 2212
+[04/Dec/2024 14:39:43] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179610
+[04/Dec/2024 14:39:43] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[04/Dec/2024 14:39:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Dec/2024 14:39:43] "GET /static/unfold/fonts/inter/Inter-Medium.woff2 HTTP/1.1" 304 0
+[04/Dec/2024 14:39:53] "GET /admin/app/applicationtracking/58/change/ HTTP/1.1" 200 41883
+[04/Dec/2024 14:39:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Dec/2024 14:39:54] "GET /admin/app/applicationtracking/57/change/ HTTP/1.1" 200 42297
+[04/Dec/2024 14:39:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Dec/2024 14:41:07] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179610
+[04/Dec/2024 14:41:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Dec/2024 14:49:06] "GET /admin/ HTTP/1.1" 200 32713
+Not Found: /favicon.ico
+[04/Dec/2024 14:49:07] "GET /favicon.ico HTTP/1.1" 404 2212
+[04/Dec/2024 14:49:08] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179610
+[04/Dec/2024 14:49:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Dec/2024 14:50:29] "GET /admin/app/applicationtracking/81/change/ HTTP/1.1" 200 41533
+[04/Dec/2024 14:50:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Dec/2024 14:50:52] "POST /admin/app/applicationtracking/81/change/ HTTP/1.1" 302 0
+[04/Dec/2024 14:50:52] "GET /admin/app/applicationtracking/81/change/ HTTP/1.1" 200 42001
+[04/Dec/2024 14:50:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Dec/2024 15:31:15] "GET /admin/ HTTP/1.1" 200 32712
+Not Found: /favicon.ico
+[04/Dec/2024 15:31:16] "GET /favicon.ico HTTP/1.1" 404 2212
+[04/Dec/2024 18:37:37] "GET /admin/ HTTP/1.1" 200 32712
+Not Found: /favicon.ico
+[04/Dec/2024 18:37:37] "GET /favicon.ico HTTP/1.1" 404 2212
+[04/Dec/2024 18:37:39] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179610
+[04/Dec/2024 18:37:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Dec/2024 18:37:41] "GET /admin/app/university/ HTTP/1.1" 200 263729
+[04/Dec/2024 18:37:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Dec/2024 18:37:43] "GET /admin/app/university/147/change/ HTTP/1.1" 200 48948
+[04/Dec/2024 18:37:43] "GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+[04/Dec/2024 18:37:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Dec/2024 18:46:49] "POST /admin/app/university/147/change/ HTTP/1.1" 302 0
+[04/Dec/2024 18:46:49] "GET /admin/app/university/ HTTP/1.1" 200 264150
+[04/Dec/2024 18:46:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Dec/2024 18:50:50] "GET /admin/ HTTP/1.1" 200 32706
+[04/Dec/2024 18:50:51] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 184547
+[04/Dec/2024 18:50:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Dec/2024 18:50:53] "GET /admin/app/university/ HTTP/1.1" 200 263729
+[04/Dec/2024 18:50:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Dec/2024 18:50:58] "GET /admin/app/university/163/change/ HTTP/1.1" 200 80427
+[04/Dec/2024 18:50:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Dec/2024 18:51:14] "GET /admin/app/applicationtracking/57/change/ HTTP/1.1" 200 42297
+[04/Dec/2024 18:51:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Dec/2024 18:51:33] "GET /admin/app/university/163/change/ HTTP/1.1" 200 80427
+[04/Dec/2024 18:51:34] "GET /admin/app/university/ HTTP/1.1" 200 263729
+[04/Dec/2024 18:51:34] "GET /admin/app/university/163/change/ HTTP/1.1" 200 80427
+[04/Dec/2024 19:01:46] "GET /admin/ HTTP/1.1" 200 32706
+[04/Dec/2024 19:01:47] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 184547
+[04/Dec/2024 19:01:47] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Dec/2024 19:03:08] "GET /admin/app/applicationtracking/78/change/ HTTP/1.1" 200 41515
+[04/Dec/2024 19:03:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Dec/2024 19:03:23] "GET /admin/app/applicationtracking/77/change/ HTTP/1.1" 200 41515
+[04/Dec/2024 19:03:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Dec/2024 19:34:52] "GET /admin/ HTTP/1.1" 200 32706
+[04/Dec/2024 19:34:54] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 184547
+[04/Dec/2024 19:34:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Dec/2024 19:35:08] "GET /admin/app/applicationtracking/77/change/ HTTP/1.1" 200 41515
+[04/Dec/2024 19:35:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Dec/2024 19:35:09] "GET /admin/app/applicationtracking/78/change/ HTTP/1.1" 200 41515
+[04/Dec/2024 19:35:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Dec/2024 23:40:32] "POST /admin/app/applicationtracking/ HTTP/1.1" 200 19396
+[04/Dec/2024 23:40:34] "POST /admin/app/applicationtracking/ HTTP/1.1" 302 0
+[04/Dec/2024 23:40:34] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 179949
+[04/Dec/2024 23:40:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Dec/2024 23:41:00] "POST /admin/app/applicationtracking/ HTTP/1.1" 200 19396
+[04/Dec/2024 23:41:02] "POST /admin/app/applicationtracking/ HTTP/1.1" 302 0
+[04/Dec/2024 23:41:02] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 175055
+[04/Dec/2024 23:41:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[05/Dec/2024 12:28:43] "GET /admin/ HTTP/1.1" 200 32707
+[05/Dec/2024 12:28:44] "GET /static/unfold/fonts/inter/styles.css HTTP/1.1" 304 0
+[05/Dec/2024 12:28:44] "GET /static/unfold/fonts/material-symbols/styles.css HTTP/1.1" 304 0
+[05/Dec/2024 12:28:44] "GET /static/unfold/css/styles.css HTTP/1.1" 304 0
+[05/Dec/2024 12:28:44] "GET /static/unfold/css/simplebar.css HTTP/1.1" 304 0
+[05/Dec/2024 12:28:44] "GET /static/unfold/js/htmx.js HTTP/1.1" 304 0
+[05/Dec/2024 12:28:44] "GET /static/unfold/js/chart.js HTTP/1.1" 304 0
+[05/Dec/2024 12:28:44] "GET /static/unfold/js/app.js HTTP/1.1" 304 0
+[05/Dec/2024 12:28:44] "GET /static/unfold/js/simplebar.js HTTP/1.1" 304 0
+[05/Dec/2024 12:28:44] "GET /static/unfold/js/alpine.anchor.js HTTP/1.1" 304 0
+[05/Dec/2024 12:28:44] "GET /static/unfold/js/alpine.persist.js HTTP/1.1" 304 0
+[05/Dec/2024 12:28:44] "GET /static/unfold/js/alpine.sort.js HTTP/1.1" 304 0
+[05/Dec/2024 12:28:44] "GET /static/unfold/js/alpine.js HTTP/1.1" 304 0
+[05/Dec/2024 12:28:44] "GET /static/unfold/fonts/inter/Inter-Regular.woff2 HTTP/1.1" 304 0
+[05/Dec/2024 12:28:44] "GET /static/unfold/fonts/material-symbols/Material-Symbols-Outlined.woff2 HTTP/1.1" 304 0
+[05/Dec/2024 12:28:44] "GET /static/unfold/fonts/inter/Inter-SemiBold.woff2 HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[05/Dec/2024 12:28:44] "GET /favicon.ico HTTP/1.1" 404 2212
+[05/Dec/2024 13:40:50] "GET /admin/ HTTP/1.1" 200 32707
+Not Found: /favicon.ico
+[05/Dec/2024 13:40:51] "GET /favicon.ico HTTP/1.1" 404 2212
+[05/Dec/2024 13:40:53] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 174717
+[05/Dec/2024 13:40:53] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[05/Dec/2024 13:40:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[05/Dec/2024 13:40:53] "GET /static/unfold/fonts/inter/Inter-Medium.woff2 HTTP/1.1" 304 0
+[05/Dec/2024 13:41:03] "POST /admin/app/applicationtracking/ HTTP/1.1" 200 19396
+[05/Dec/2024 13:41:04] "POST /admin/app/applicationtracking/ HTTP/1.1" 302 0
+[05/Dec/2024 13:41:04] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 170131
+[05/Dec/2024 13:41:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[05/Dec/2024 13:41:11] "GET /admin/app/applicationtracking/1/change/ HTTP/1.1" 200 41406
+[05/Dec/2024 13:41:11] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+/Users/omar/Main/Software_Projects/Projects/Personal/playground/app/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 30, 2024 - 21:01:17
+Django version 5.1.2, using settings 'playground.settings'
+Starting development server at http://127.0.0.1:8001/
+Quit the server with CONTROL-C.
+
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x00000001f54a7840 (most recent call first):
+  <no Python frame>
+Watching for file changes with StatReloader
+[05/Dec/2024 13:42:14] "GET /admin/app/applicationtracking/1/change/ HTTP/1.1" 200 41446
+[05/Dec/2024 13:42:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[05/Dec/2024 13:42:40] "POST /admin/app/applicationtracking/1/change/ HTTP/1.1" 302 0
+[05/Dec/2024 13:42:40] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 171571
+[05/Dec/2024 13:42:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[05/Dec/2024 13:44:02] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 171135
+[05/Dec/2024 13:44:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[05/Dec/2024 13:44:07] "GET /admin/app/applicationtracking/1/change/ HTTP/1.1" 200 41543
+[05/Dec/2024 13:44:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[05/Dec/2024 21:12:08] "GET /admin/ HTTP/1.1" 200 32681
+Not Found: /favicon.ico
+[05/Dec/2024 21:12:08] "GET /favicon.ico HTTP/1.1" 404 2212
+[05/Dec/2024 21:12:09] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 171135
+[05/Dec/2024 21:12:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[05/Dec/2024 21:12:16] "GET /admin/app/applicationtracking/81/change/ HTTP/1.1" 200 41574
+[05/Dec/2024 21:12:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[05/Dec/2024 21:12:17] "GET /admin/app/applicationtracking/2/change/ HTTP/1.1" 200 41446
+[05/Dec/2024 21:12:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[05/Dec/2024 21:12:25] "POST /admin/app/applicationtracking/ HTTP/1.1" 302 0
+[05/Dec/2024 21:12:25] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 171477
+[05/Dec/2024 21:12:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[05/Dec/2024 21:13:26] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 171135
+[05/Dec/2024 21:13:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[05/Dec/2024 21:13:46] "GET /admin/app/applicationtracking/82/change/ HTTP/1.1" 200 41546
+[05/Dec/2024 21:13:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[05/Dec/2024 21:13:52] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 171135
+Watching for file changes with StatReloader
+[11/Dec/2024 09:14:40] "GET /admin/ HTTP/1.1" 302 0
+[11/Dec/2024 09:14:40] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 9530
+[11/Dec/2024 09:14:40] "GET /static/unfold/fonts/inter/styles.css HTTP/1.1" 304 0
+[11/Dec/2024 09:14:40] "GET /static/unfold/fonts/material-symbols/styles.css HTTP/1.1" 304 0
+[11/Dec/2024 09:14:40] "GET /static/unfold/js/app.js HTTP/1.1" 304 0
+[11/Dec/2024 09:14:40] "GET /static/unfold/css/simplebar.css HTTP/1.1" 304 0
+[11/Dec/2024 09:14:40] "GET /static/unfold/js/simplebar.js HTTP/1.1" 304 0
+[11/Dec/2024 09:14:40] "GET /static/unfold/js/htmx.js HTTP/1.1" 304 0
+[11/Dec/2024 09:14:40] "GET /static/unfold/css/styles.css HTTP/1.1" 200 115794
+[11/Dec/2024 09:14:40] "GET /static/unfold/js/chart.js HTTP/1.1" 200 200633
+[11/Dec/2024 09:14:40] "GET /static/unfold/js/alpine.anchor.js HTTP/1.1" 304 0
+[11/Dec/2024 09:14:40] "GET /static/unfold/js/alpine.persist.js HTTP/1.1" 304 0
+[11/Dec/2024 09:14:40] "GET /static/unfold/js/alpine.js HTTP/1.1" 304 0
+[11/Dec/2024 09:14:40] "GET /static/unfold/js/alpine.sort.js HTTP/1.1" 304 0
+[11/Dec/2024 09:14:40] "GET /static/unfold/fonts/inter/Inter-Regular.woff2 HTTP/1.1" 304 0
+[11/Dec/2024 09:14:40] "GET /static/unfold/fonts/inter/Inter-SemiBold.woff2 HTTP/1.1" 304 0
+[11/Dec/2024 09:14:40] "GET /static/unfold/fonts/inter/Inter-Medium.woff2 HTTP/1.1" 304 0
+[11/Dec/2024 09:14:40] "GET /static/unfold/fonts/material-symbols/Material-Symbols-Outlined.woff2 HTTP/1.1" 200 256424
+Not Found: /favicon.ico
+[11/Dec/2024 09:14:40] "GET /favicon.ico HTTP/1.1" 404 2212
+[11/Dec/2024 09:14:40] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 9530
+[11/Dec/2024 09:14:43] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[11/Dec/2024 09:14:43] "GET /admin/ HTTP/1.1" 200 32696
+[11/Dec/2024 09:14:45] "GET /admin/app/applicationtracking/ HTTP/1.1" 200 171135
+[11/Dec/2024 09:14:45] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[11/Dec/2024 09:14:45] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[11/Dec/2024 09:14:45] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[11/Dec/2024 09:14:45] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[11/Dec/2024 09:14:45] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[11/Dec/2024 09:14:45] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[11/Dec/2024 09:14:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[11/Dec/2024 09:14:45] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+[11/Dec/2024 09:14:45] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+[11/Dec/2024 09:14:49] "GET /admin/app/applicationtracking/58/change/ HTTP/1.1" 200 41923
+[11/Dec/2024 09:14:49] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[11/Dec/2024 09:14:49] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[11/Dec/2024 09:14:49] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[11/Dec/2024 09:14:49] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[11/Dec/2024 09:14:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[11/Dec/2024 09:14:51] "GET /admin/app/university/163/change/?_to_field=id HTTP/1.1" 200 80647
+[11/Dec/2024 09:14:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[11/Dec/2024 09:14:51] "GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+[11/Dec/2024 09:16:12] "POST /admin/app/university/163/change/?_to_field=id HTTP/1.1" 302 0
+[11/Dec/2024 09:16:12] "GET /admin/app/university/ HTTP/1.1" 200 264141
+[11/Dec/2024 09:16:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3342

@@ -83,9 +83,11 @@ class UniversityProgram(models.Model):
 
 class ApplicationStatus(models.TextChoices):
     NOT_STARTED = 'NS', 'Not Started'
-    WAITING_FOR_OPENING = 'WO', 'Waiting for Opening'
     IN_PROGRESS = 'IP', 'In Progress'
+    HARD_APPLICATION = 'HA', 'Hard Application'
+    WAITING_FOR_OPENING = 'WO', 'Waiting for Opening'
     ACCEPTED = 'AC', 'Accepted'
+    REJECTED = 'RE', 'Rejected'
 
 
 class University(models.Model):

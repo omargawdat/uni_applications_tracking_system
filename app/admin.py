@@ -86,10 +86,6 @@ class ApplicationTrackingAdmin(ModelAdmin):
             ),
         )
 
-    def get_readonly_fields(self, request, obj=...):
-        if obj.status == ApplicationStatus.IN_PROGRESS:
-            return ['status', 'application_portal']
-
 
 class ApplicationTrackingInline(TabularInline):
     model = ApplicationTracking
