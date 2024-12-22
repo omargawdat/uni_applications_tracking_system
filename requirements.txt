@@ -3,3 +3,4 @@ django-unfold==0.42.0
 Pillow==11.0.0
 requests==2.32.3
 bs4==0.0.2
+django-modeltranslation==0.19.11
