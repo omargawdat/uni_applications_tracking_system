@@ -1,5 +1,6 @@
 Django==5.1.2
-django-unfold==0.42.0
+django-unfold @ git+https://github.com/unfoldadmin/django-unfold.git@main
+
 Pillow==11.0.0
 requests==2.32.3
 bs4==0.0.2

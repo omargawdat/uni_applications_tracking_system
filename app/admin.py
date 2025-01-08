@@ -90,10 +90,10 @@ class ApplicationTrackingAdmin(ModelAdmin):
 class ApplicationTrackingInline(TabularInline):
     model = ApplicationTracking
     extra = 0
-    classes = ['collapse']
     exclude = ["program_url", ]
     can_delete = False
     show_change_link = True
+    tab = True
 
     def get_ordering(self, request):
         return (
@@ -112,6 +112,7 @@ class UniversityAdmin(ModelAdmin):
     list_display = ('name', 'status', 'display_applied_programs',)
     inlines = [ApplicationTrackingInline]
     show_facets = admin.ShowFacets.ALWAYS
+    list_editable = ('status',)
 
     def get_ordering(self, request):
         return (
